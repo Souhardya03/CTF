@@ -1,0 +1,49 @@
+.mainbackground{
+    background: url("../../assets/images/haunted-house.jpg");
+    background-position:center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.mainbackground::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.571); /* Adjust the color and opacity */
+    z-index: 1;
+}
+
+.mainbackground > * {
+    position: relative;
+    z-index: 2;
+}
+
+.animate-scale{
+    animation: scaleupdown 1.6s ;
+}
+
+@keyframes scaleupdown {
+    0%{
+        scale: 0.8;
+    }   
+    50%{
+        scale: 1.1;
+    } 
+    100%{
+        scale: 1;
+    }
+}
+
+.animate-down{
+    animation: down 1.6s ;
+
+}
+@keyframes down {
+    0%{
+        transform: translateY(-100px);
+    }
+
+    
+}

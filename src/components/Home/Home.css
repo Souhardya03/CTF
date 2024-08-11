@@ -1,0 +1,91 @@
+.homebackground {
+	background: url("../../assets/images/home-background.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/* Home.css */
+.homebackground {
+	position: relative;
+	z-index: 10;
+	opacity: 0; /* Hidden by default */
+	transition: opacity 0.5s ease-in-out;
+}
+
+.homebackground.opacity-100 {
+	opacity: 1;
+}
+
+/* Image styles */
+img {
+	display: block;
+}
+
+img.opacity-0 {
+	opacity: 0;
+}
+
+img.opacity-100 {
+	opacity: 1;
+}
+
+/* Infinite glowing animation */
+@keyframes text-glow-animation {
+	0%,
+	100% {
+		text-shadow: 0 0 4px rgba(255, 255, 255, 0.537),
+			0 0 6px rgba(255, 255, 255, 0.396), 0 0 8px rgba(255, 255, 255, 0.4);
+	}
+	50% {
+		text-shadow: 0 0 6px rgba(255, 255, 255, 0.555),
+			0 0 8px rgba(255, 255, 255, 0.509), 0 0 10px rgba(255, 255, 255, 0.364);
+	}
+}
+
+/* Infinite glowing animation for orange text */
+@keyframes glow-orange-animation {
+	0%,
+	100% {
+		text-shadow: 0 0 4px rgba(255, 128, 0, 0.8), 0 0 5px rgba(255, 145, 0, 0.6),
+			0 0 10px rgba(255, 140, 0, 0.4);
+	}
+	50% {
+		text-shadow: 0 0 6px rgb(255, 115, 0), 0 0 8px rgba(255, 166, 0, 0.8),
+			0 0 12px rgba(255, 145, 0, 0.6);
+	}
+}
+
+/* Apply the animation */
+.text-glow {
+	animation: text-glow-animation 2s infinite;
+}
+
+/* .glow-orange {
+    animation: glow-orange-animation 2s infinite;
+  } */
+
+.glow-white {
+	animation: text-glow-animation 2s infinite;
+}
+
+.fade-out {
+	animation: fade-out 3s;
+}
+
+@keyframes fade-out {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+.move-up {
+	animation: move-up 2s;
+}
+@keyframes move-up {
+	0% {
+		transform: translateY(80px);
+	}
+}

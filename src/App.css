@@ -1,38 +1,55 @@
-.App {
-  text-align: center;
+
+@font-face {
+  font-family: 'HalloweenFont';
+  src: url('./assets/fonts/OctoberCrow.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+.halloweenFont{
+  font-family: 'HalloweenFont',sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'Welcome';
+  src: url('./assets/fonts/MidnightMinutes_DEMO.otf');
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.welcome{
+  font-family: 'Welcome', sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@font-face {
+  font-family: 'Scary-Halloween';
+  src: url("./assets/fonts/ScaryHalloweenFont.ttf");
+}
+.scary-halloween{
+  font-family: 'Scary-Halloween', sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+@font-face {
+  font-family: 'WitchMagic';
+  src: url("./assets/fonts/WitchMagic.ttf");
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.WitchMagic{
+  font-family: 'WitchMagic', sans-serif;
 }
+
+@font-face {
+  font-family: 'MagnificentSerif';
+  src: url("./assets/fonts/MagnificentSerif.ttf");
+}
+
+.MagnificentSerif{
+  font-family: 'MagnificentSerif', sans-serif;
+}
+
+@font-face {
+  font-family: "TrickorTreats";
+  src: url("./assets/fonts/TheHoca.ttf");
+}
+.trick-or-treats{
+  font-family: 'TrickorTreats', sans-serif;
+}
+
+
