@@ -24,6 +24,7 @@
 }
 .scary-halloween{
   font-family: 'Scary-Halloween', sans-serif;
+  
 }
 
 @font-face {
@@ -52,4 +53,22 @@
   font-family: 'TrickorTreats', sans-serif;
 }
 
+@font-face {
+  font-family: "Frightmare";
+  src: url("./assets/fonts/HappyHalloween.ttf");
+}
+.Frightmare{
+  font-family: 'Frightmare', sans-serif;
+  background: #FC8E18;
+background: linear-gradient(to right, #FC8E18 0%, #FF7118 50%, #3C3736 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+@font-face {
+  font-family: "FREAKYHALLOWEEN";
+  src: url("./assets/fonts/FREAKYHALLOWEEN.otf");
+}
+.FREAKYHALLOWEEN{
+  font-family: 'FREAKYHALLOWEEN', sans-serif;
+}
 

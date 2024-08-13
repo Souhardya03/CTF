@@ -10,7 +10,7 @@ const WithLoader = (WrappedComponent) => {
       // Simulate a loading time
       setTimeout(() => {
         setLoading(false);
-      }, 2000); // Adjust the time as needed
+      }, 100); // Adjust the time as needed
     }, []);
 
     return loading ? <Loader /> : <WrappedComponent />;

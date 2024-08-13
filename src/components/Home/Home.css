@@ -1,32 +1,8 @@
-.homebackground {
+.home-back {
 	background: url("../../assets/images/home-background.jpg");
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-}
-/* Home.css */
-.homebackground {
-	position: relative;
-	z-index: 10;
-	opacity: 0; /* Hidden by default */
-	transition: opacity 0.5s ease-in-out;
-}
-
-.homebackground.opacity-100 {
-	opacity: 1;
-}
-
-/* Image styles */
-img {
-	display: block;
-}
-
-img.opacity-0 {
-	opacity: 0;
-}
-
-img.opacity-100 {
-	opacity: 1;
 }
 
 /* Infinite glowing animation */
