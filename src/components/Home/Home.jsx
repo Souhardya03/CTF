@@ -4,8 +4,12 @@ import Navbar from "../Navbar/Navbar";
 import homeback from "../../assets/images/home-background.jpg";
 import { motion } from "framer-motion";
 import { pageVariants, pageTransition } from "../Framer/Framer";
+import Footer from "../Footer/Footer";
+
 const Home = () => {
 	return (
+		<>
+		
 		<div className="home-back h-[100vh] w-full">
 			<img
 				src={homeback}
@@ -46,6 +50,10 @@ const Home = () => {
 				</div>
 			</motion.div>
 		</div>
+		
+		<Footer/>
+
+		</>
 	);
 };
 
