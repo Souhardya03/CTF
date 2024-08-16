@@ -1,0 +1,22 @@
+.dust {
+    position: fixed;
+    width: 8px;
+    height: 8px;
+    background-color: rgba(230, 233, 234, 0.8);
+    border-radius: 75%;
+    pointer-events: none;
+    animation: dust-animation 1s ease-out forwards;
+    box-shadow: 0 0 8px rgba(230, 233, 234, 0.8);
+    z-index: 10;
+}
+
+@keyframes dust-animation {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0);
+        opacity: 0;
+    }
+}

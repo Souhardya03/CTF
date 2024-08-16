@@ -1,6 +1,5 @@
 .home-back {
 	background: url("../../assets/images/home-background.jpg");
-	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
 }
@@ -45,7 +44,7 @@
 }
 
 .fade-out {
-	animation: fade-out 3s;
+	animation: fade-out 5s;
 }
 
 @keyframes fade-out {
@@ -58,7 +57,7 @@
 }
 
 .move-up {
-	animation: move-up 2s;
+	animation: move-up 3s;
 }
 @keyframes move-up {
 	0% {

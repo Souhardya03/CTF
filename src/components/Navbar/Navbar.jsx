@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
 	return (
-		<nav className="flex top-0 static justify-between p-4 z-10 bg-[#1a19193d] items-center w-full">
+		<nav className="flex fixed top-0 justify-between p-4 z-10 bg-[#1a19193d] items-center w-full">
 			<div className="text-white">Logo</div>
 			<div className="flex text-white scary-halloween gap-8">
 				<NavLink to="/home" style={({ isActive }) =>
