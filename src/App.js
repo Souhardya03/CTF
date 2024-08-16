@@ -6,12 +6,15 @@ import Main from "./components/Main/Main.jsx";
 import { Routes, Route, useLocation } from "react-router-dom";
 import Rules from "./components/Rules/Rules.jsx";
 import { AnimatePresence } from "framer-motion";
+import PixieDust from "./components/PixieDust/PixieDust.jsx";
 function App() {
 	const MainWithLoader = WithLoader(Main);
 	const HomeWithLoader = WithLoader(Home);
-  const RulesWithLoader = WithLoader(Rules)
+    const RulesWithLoader = WithLoader(Rules);
   const location = useLocation();
 	return (
+		<>
+		<PixieDust/>
 		<AnimatePresence mode="wait">
 			<Routes location={location} key={location.pathname}>
 				<Route
@@ -27,7 +30,9 @@ function App() {
 					element={<RulesWithLoader />}
 				/>
 			</Routes>
+			
 		</AnimatePresence>
+		</>
 	);
 }
 

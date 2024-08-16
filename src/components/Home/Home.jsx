@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 import { pageVariants, pageTransition } from "../Framer/Framer";
 import Footer from "../Footer/Footer";
 import Timer from "../Timer/Timer"
+import PixieDust from "../PixieDust/PixieDust";
 
 const Home = () => {
 	return (
@@ -52,9 +53,7 @@ const Home = () => {
 				</div>
 			</motion.div>
 		</div>
-		
 		<Footer/>
-
 		</>
 	);
 };

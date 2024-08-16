@@ -13,8 +13,10 @@ const Navbar = () => {
 				<NavLink to="/rules" style={({ isActive }) =>
                 isActive ? { color: "rgb(249,115,22)" } : {}
               }>Rules</NavLink>
+			  <NavLink to="/challenges">Challenges</NavLink>
 				<NavLink to="/team">Team</NavLink>
 				<NavLink to="/contact">Contact</NavLink>
+				
 			</div>
 			<div className="border-2 flex justify-center scary-halloween rounded-full items-center p-2 px-4 border-orange-500" >
 				<div className="text-orange-500 ">Register</div>
