@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useState, useRef, useEffect } from "react";
 import "./Home.css";
 import Navbar from "../Navbar/Navbar";
 import homeback from "../../assets/images/home-background.jpg";
 import { motion } from "framer-motion";
 import { pageVariants, pageTransition } from "../Framer/Framer";
 import Footer from "../Footer/Footer";
+import Timer from "../Timer/Timer"
 
 const Home = () => {
 	return (
@@ -45,6 +46,7 @@ const Home = () => {
 								ourselves and our organizations from cyber threats, helping
 								create a safer internet for all.
 							</div>
+							<Timer/>
 						</div>
 					</div>
 				</div>
