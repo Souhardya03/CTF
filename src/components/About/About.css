@@ -1,0 +1,69 @@
+.about-back {
+	background: url("../../assets/images/about-back.jpg");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+@keyframes glitch {
+	0% {
+	  text-shadow: 2px 2px 0 #ff00ff, -2px -2px 0 #00ffff;
+	  transform: skew(0.3deg);
+	}
+	20% {
+	  text-shadow: 2px -2px 0 #ff00ff, -2px 2px 0 #00ffff;
+	  transform: skew(-0.3deg);
+	}
+	40% {
+	  text-shadow: -2px 2px 0 #ff00ff, 2px -2px 0 #00ffff;
+	  transform: skew(0.3deg);
+	}
+	60% {
+	  text-shadow: -2px -2px 0 #ff00ff, 2px 2px 0 #00ffff;
+	  transform: skew(-0.3deg);
+	}
+	80% {
+	  text-shadow: 2px -2px 0 #ff00ff, -2px 2px 0 #00ffff;
+	  transform: skew(0.3deg);
+	}
+	100% {
+	  text-shadow: -2px 2px 0 #ff00ff, 2px -2px 0 #00ffff;
+	  transform: skew(0.3deg);
+	}
+  }
+  
+  .glitch {
+	animation: glitch 1s infinite;
+	position: relative;
+  }
+  
+  .glitch::before,
+  .glitch::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0.8;
+	color: white;
+	background: transparent;
+  }
+  
+  .glitch::before {
+	left: 2px;
+	text-shadow: -2px 0 red;
+	animation: glitch 1s infinite reverse;
+  }
+  
+  .glitch::after {
+	left: -2px;
+	text-shadow: -2px 0 blue;
+	animation: glitch 1.5s infinite;
+  }
+  .glow-effect {
+	filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8));
+	transition: filter 0.3s ease-in-out;
+  }
+  
+  .glow-effect:hover {
+	filter: drop-shadow(0 0 20px rgba(255, 255, 255, 1));
+  }
+  
+  

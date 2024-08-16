@@ -9,7 +9,9 @@ const Navbar = () => {
 				<NavLink to="/home" style={({ isActive }) =>
                 isActive ? { color: "rgb(249,115,22)" } : {}
               }>Home</NavLink>
-				<NavLink to="/about">About</NavLink>
+				<NavLink to="/about" style={({ isActive }) =>
+                isActive ? { color: "rgb(249,115,22)" } : {}
+              }>About</NavLink>
 				<NavLink to="/rules" style={({ isActive }) =>
                 isActive ? { color: "rgb(249,115,22)" } : {}
               }>Rules</NavLink>

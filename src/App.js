@@ -7,10 +7,12 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import Rules from "./components/Rules/Rules.jsx";
 import { AnimatePresence } from "framer-motion";
 import PixieDust from "./components/PixieDust/PixieDust.jsx";
+import About from "./components/About/About.jsx";
 function App() {
 	const MainWithLoader = WithLoader(Main);
 	const HomeWithLoader = WithLoader(Home);
 	const RulesWithLoader = WithLoader(Rules);
+	const AboutWithLoader = WithLoader(About);
 	const location = useLocation();
 	return (
 		<>
@@ -30,6 +32,10 @@ function App() {
 					<Route
 						path="/rules"
 						element={<RulesWithLoader />}
+					/>
+					<Route
+						path="/about"
+						element={<AboutWithLoader />}
 					/>
 				</Routes>
 			</AnimatePresence>
