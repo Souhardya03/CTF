@@ -24,7 +24,7 @@ const Rules = () => {
 					transition={pageTransition}>
 					<div
 						className={`  transition-opacity overflow-x-hidden duration-500 `}>
-						<div className="text-white  mt-20 lg:mt-14 h-[79vh] lg:h-[84.1vh] flex  overflow-y-auto items-center flex-col p-4 lg:p-14 ">
+						<div className="text-white  mt-20 lg:mt-14 h-[78vh] lg:h-[84.1vh] flex  overflow-y-auto items-center flex-col p-4 lg:p-14 ">
 							<div className="lg:w-[70%] flex flex-col items-center justify-center">
 								<div className="text-6xl fade-out flex  items-center Frightmare ">
 									Rules
