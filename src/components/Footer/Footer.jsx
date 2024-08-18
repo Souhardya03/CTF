@@ -4,15 +4,22 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import XIcon from "@mui/icons-material/X";
-import CopyrightIcon from '@mui/icons-material/Copyright';
+import CopyrightIcon from "@mui/icons-material/Copyright";
 
 const Footer = () => {
 	return (
 		<>
-			<div className="bg-[#1a1919ba] z-[999] bottom-0  w-full">
-				<div className="p-4 flex justify-between items-center text-white WitchMagic">
-					<p className="text-xl">Team <span className="text-orange-400">Z3r0l0g0n</span></p>
-					<div className="text-sm">All Rights Reserved <CopyrightIcon/> <span className="">Z3R0_LOGON</span></div>
+			<div className="bg-[#1a1919ba] z-[999]  w-full">
+				<div
+					className="p-4 flex justify-between items-center 
+				 text-white WitchMagic">
+					<p className="text-xl">
+						Team <span className="text-orange-400">Z3r0l0g0n</span>
+					</p>
+					<div className="text-sm">
+						All Rights Reserved <CopyrightIcon />{" "}
+						<span className="">Z3R0_LOGON</span>
+					</div>
 					<div className="flex gap-3">
 						<a
 							rel="noreferrer"

@@ -2,6 +2,7 @@
 	background: url("../../assets/images/home-background.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
+	position: fixed;
 }
 
 /* Infinite glowing animation */

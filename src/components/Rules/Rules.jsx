@@ -8,7 +8,7 @@ import Footer from "../Footer/Footer";
 const Rules = () => {
 	return (
 		<>
-			<div className="rules-back  w-full">
+			<div className="rules-back h-full  w-full">
 				{/* <img
 				src={rulesback}
 				alt="Background"
