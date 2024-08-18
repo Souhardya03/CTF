@@ -8,11 +8,13 @@ import Rules from "./components/Rules/Rules.jsx";
 import { AnimatePresence } from "framer-motion";
 import PixieDust from "./components/PixieDust/PixieDust.jsx";
 import About from "./components/About/About.jsx";
+import Team from "./components/Team/Team.jsx";
 function App() {
 	const MainWithLoader = WithLoader(Main);
 	const HomeWithLoader = WithLoader(Home);
 	const RulesWithLoader = WithLoader(Rules);
 	const AboutWithLoader = WithLoader(About);
+	const TeamWithLoader = WithLoader(Team);
 	const location = useLocation();
 	return (
 		<>
@@ -36,6 +38,10 @@ function App() {
 					<Route
 						path="/about"
 						element={<AboutWithLoader />}
+					/>
+					<Route
+						path="/team"
+						element={<TeamWithLoader />}
 					/>
 				</Routes>
 			</AnimatePresence>

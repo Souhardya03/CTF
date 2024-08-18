@@ -1,12 +1,12 @@
 import React from "react";
-// import Footer from "../Footer/Footer";
 import Navbar from "../Navbar/Navbar";
 import { motion } from "framer-motion";
 import { pageVariants, pageTransition } from "../Framer/Framer";
-import "./About.css";
-import AboutHat from "../../assets/images/about-hat.png";
+import Footer from "../Footer/Footer";
+import WitchStick from "../../assets/images/witch-stick.png";
 
-const About = () => {
+
+const Team = () => {
 	return (
 		<>
 			<div className="about-back h-[100vh] w-full">
@@ -19,18 +19,14 @@ const About = () => {
 					transition={pageTransition}>
 					<div className="flex text-white pt-40 flex-col justify-center items-center relative">
 						<div className="WitchMagic text-5xl relative flex flex-col items-center">
-							{/* Hat image */}
-							<div className="w-[50%] -left-[4.5rem] absolute top-[-5.8rem] z-[2] -rotate-45">
-								<img
-									src={AboutHat}
-									alt="About Hat"
-									className="shadow-md glow-effect"
-								/>
-							</div>
+							
 							{/* Text */}
 							<div className="z-[1] ">
-								<span className="text-red-500 text-6xl">ABOUT</span> <span className="glow-white">US</span>
+								<span className="glow-white text-5xl">MEET OUR</span> <span className=" text-red-500">TEAM</span>
 							</div>
+                            <div className="w-full">
+                                <img src={WitchStick} className="absolute glow-effect left-[3rem] w-[80%] -top-[6.2rem] rotate-[215deg]" alt="" />
+                            </div>
 						</div>
 					</div>
 				</motion.div>
@@ -39,4 +35,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default Team;
