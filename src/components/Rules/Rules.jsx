@@ -23,8 +23,8 @@ const Rules = () => {
 					variants={pageVariants}
 					transition={pageTransition}>
 					<div
-						className={`  transition-opacity overflow-x-hidden duration-500 h-[100vh] `}>
-						<div className="text-white  mt-20 lg:mt-14  h-[90vh]   lg:h-[84.1vh] flex  overflow-y-auto items-center flex-col p-4 lg:p-14 ">
+						className={`  transition-opacity no-scrollbar overflow-x-hidden duration-500 lg:h-full h-[100vh] `}>
+						<div className="text-white no-scrollbar  mt-20 lg:mt-14  h-[90vh]   lg:h-[84.1vh] flex  overflow-y-auto items-center flex-col p-4 lg:p-14 ">
 							<div className="lg:w-[70%] flex flex-col items-center justify-center">
 								<div className="text-6xl fade-out flex  items-center Frightmare ">
 									Rules
