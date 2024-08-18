@@ -6,7 +6,7 @@ const Navbar = ({ scrolled }) => {
     return (
         <nav
             className={`flex fixed top-0 justify-between items-center px-4  p-1 z-10 w-full transition-colors duration-300 ${
-                scrolled ? 'bg-[#1a1919db]' : 'bg-[#1a19193d]'
+                scrolled ? 'bg-[#1a1919f6]' : 'bg-[#1a19193d]'
             }`}
         >
             <div className="flex items-center gap-2">

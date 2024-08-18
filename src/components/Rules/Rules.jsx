@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import "./Rules.css";
 import { motion } from "framer-motion";
@@ -6,9 +6,27 @@ import { pageVariants, pageTransition } from "../Framer/Framer";
 import Footer from "../Footer/Footer";
 
 const Rules = () => {
+	const [scrolled, setScrolled] = useState(false);
+	useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            if (scrollTop > 50) {
+				console.log("scroll");
+				
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 	return (
 		<div className="">
-			<Navbar />
+			<Navbar scrolled={scrolled}/>
 			<div className="rules-back  w-full">
 				{/* <img
 				src={rulesback}
