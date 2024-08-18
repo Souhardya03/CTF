@@ -9,12 +9,14 @@ import { AnimatePresence } from "framer-motion";
 import PixieDust from "./components/PixieDust/PixieDust.jsx";
 import About from "./components/About/About.jsx";
 import Team from "./components/Team/Team.jsx";
+import Contact from "./components/Contact/Contact.jsx";
 function App() {
 	const MainWithLoader = WithLoader(Main);
 	const HomeWithLoader = WithLoader(Home);
 	const RulesWithLoader = WithLoader(Rules);
 	const AboutWithLoader = WithLoader(About);
 	const TeamWithLoader = WithLoader(Team);
+	const ContactWithLoader = WithLoader(Contact);
 	const location = useLocation();
 	return (
 		<>
@@ -42,6 +44,10 @@ function App() {
 					<Route
 						path="/team"
 						element={<TeamWithLoader />}
+					/>
+					<Route
+						path="/contact"
+						element={<ContactWithLoader />}
 					/>
 				</Routes>
 			</AnimatePresence>
