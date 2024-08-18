@@ -60,11 +60,11 @@ const Timer = () => {
 	};
 
 	return (
-		<div className="mt-28 trick-or-treats font-bold">
+		<div className="lg:mt-28 mt-8 text-xs trick-or-treats font-bold">
 			{state.second < 0 ? (
 				<div>Happy Hacking!</div>
 			) : (
-				<div className="flex items-center  gap-3">
+				<div className="flex items-center gap-2 lg:gap-3">
 					<div className="flex p-4 rounded-md flex-col justify-center items-center bg-[#1a1919b5]">
 						<div>{state.days || "00"}</div>
 						<div className="text-yellow-400">Days</div>

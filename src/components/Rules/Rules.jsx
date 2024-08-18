@@ -24,42 +24,42 @@ const Rules = () => {
 					transition={pageTransition}>
 					<div
 						className={`  transition-opacity overflow-x-hidden duration-500 `}>
-						<div className="text-white no-scrollbar mt-14  h-[84.1vh] flex justify-center overflow-y-auto items-center flex-col p-14 ">
-							<div className="w-[70%] flex flex-col mt-48 items-center justify-center">
-								<div className="text-6xl fade-out flex justify-center items-center Frightmare ">
+						<div className="text-white  mt-20 lg:mt-14 h-[79vh] lg:h-[84.1vh] flex  overflow-y-auto items-center flex-col p-4 lg:p-14 ">
+							<div className="lg:w-[70%] flex flex-col items-center justify-center">
+								<div className="text-6xl fade-out flex  items-center Frightmare ">
 									Rules
 								</div>
-								<div className=" move-up flex flex-col justify-center FREAKYHALLOWEEN mt-4">
+								<div className=" move-up flex flex-col  FREAKYHALLOWEEN mt-4">
 									<div className="flex items-center justify-center gap-2">
 										<div className="text-[35px] text-orange-400">E</div>
-										<div className="trick-or-treats text-lg pt-3">
+										<div className="trick-or-treats text-sm lg:text-lg pt-3">
 											Participants are allowed to use any tool (online /
 											offline) for solving the challenges
 										</div>
 									</div>
 									<div className="flex items-center gap-1">
 										<div className="text-[35px] text-orange-400">A</div>
-										<div className="trick-or-treats text-lg pt-3">
+										<div className="trick-or-treats text-sm lg:text-lg pt-3">
 											Flag sharing is strictly prohibited. It will cause ban
 											from the CTF for both the players
 										</div>
 									</div>
 									<div className="flex items-center pl-2 gap-2">
 										<div className="text-[35px] text-orange-400">L</div>
-										<div className="trick-or-treats text-lg pt-3">
+										<div className="trick-or-treats text-sm lg:text-lg pt-3">
 											The time duration of the CTF is 2.30 hours
 										</div>
 									</div>
 									<div className="flex items-center pl-4 gap-2">
 										<div className="text-[35px] text-orange-400">T</div>
-										<div className="trick-or-treats text-lg pt-3">
+										<div className="trick-or-treats text-sm lg:text-lg pt-3">
 											Any type of attack on the CTF website is strictly
 											prohibited
 										</div>
 									</div>
 								</div>
 							</div>
-							<div className="w-[70%] flex flex-col items-center justify-center">
+							<div className="lg:w-[70%] flex flex-col items-center justify-center">
 								<div className="text-6xl pt-14 fade-out flex justify-center items-center Frightmare ">
 									FAQs
 								</div>
@@ -67,7 +67,7 @@ const Rules = () => {
 									<div className="flex  gap-2">
 										<div className="text-[35px] text-orange-400">E</div>
 										<div className="flex flex-col justify-center">
-											<div className="trick-or-treats text-lg pt-4">
+											<div className="trick-or-treats text-sm lg:text-lg pt-4">
 												What is the SLAY_CTF?
 											</div>
 											<div className="scary-halloween pl-4">
@@ -86,20 +86,20 @@ const Rules = () => {
 									</div>
 									<div className="flex items-center gap-1">
 										<div className="text-[35px] text-orange-400">A</div>
-										<div className="trick-or-treats text-lg pt-3">
+										<div className="trick-or-treats text-sm lg:text-lg pt-3">
 											Flag sharing is strictly prohibited. It will cause ban
 											from the CTF for both the players
 										</div>
 									</div>
 									<div className="flex items-center pl-2 gap-2">
 										<div className="text-[35px] text-orange-400">L</div>
-										<div className="trick-or-treats text-lg pt-3">
+										<div className="trick-or-treats text-sm lg:text-lg pt-3">
 											The time duration of the CTF is 2.30 hours
 										</div>
 									</div>
 									<div className="flex items-center pl-4 gap-2">
 										<div className="text-[35px] text-orange-400">T</div>
-										<div className="trick-or-treats text-lg pt-3">
+										<div className="trick-or-treats text-sm lg:text-lg pt-3">
 											Any type of attack on the CTF website is strictly
 											prohibited
 										</div>

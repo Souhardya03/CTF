@@ -1,20 +1,20 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/Logo.png";
-const Navbar = () => {
+const Navbar = () => {	
 	return (
-		<nav className="flex fixed top-0 justify-between px-4 z-10 bg-[#1a19193d] items-center w-full">
+		<nav className="flex fixed top-0 justify-between px-4 p-1 z-10 bg-[#1a191974] items-center w-full">
 			<div className="flex items-center gap-2 ">
 				<div className="text-white flex items-center justify-center rounded-full overflow-hidden">
 					<img
 						src={logo}
 						alt=""
-						className="w-16 h-16 object-center"
+						className="lg:w-16 lg:h-16 w-12 h-12 object-center"
 					/>
 				</div>
 				<div className="text-xl text-red-500 WitchMagic">Z3r0<span className="text-white">D4Y</span></div>
 			</div>
-			<div className="flex text-white scary-halloween gap-8">
+			<div className="lg:flex hidden text-white scary-halloween gap-8">
 				<NavLink
 					to="/home"
 					style={({ isActive }) =>

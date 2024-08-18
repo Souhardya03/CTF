@@ -13,10 +13,10 @@ const Footer = () => {
 				<div
 					className="p-4 flex justify-between items-center 
 				 text-white WitchMagic">
-					<p className="text-xl">
+					<p className="lg:text-xl text-sm">
 						Team <span className="text-orange-400">Z3r0l0g0n</span>
 					</p>
-					<div className="text-sm">
+					<div className="text-sm lg:block hidden">
 						All Rights Reserved <CopyrightIcon />{" "}
 						<span className="">Z3R0_LOGON</span>
 					</div>
