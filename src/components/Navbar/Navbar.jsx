@@ -30,7 +30,7 @@ const Navbar = () => {
 					}>
 					Rules
 				</NavLink>
-				<NavLink to="/challenges">Challenges</NavLink>
+				{/* <NavLink to="/challenges">Challenges</NavLink> */}
 				<NavLink
 					to="/team"
 					style={({ isActive }) =>

@@ -1,74 +1,79 @@
-
 @font-face {
-  font-family: 'HalloweenFont';
-  src: url('./assets/fonts/OctoberCrow.ttf');
-  font-weight: normal;
-  font-style: normal;
+	font-family: "HalloweenFont";
+	src: url("./assets/fonts/OctoberCrow.ttf");
+	font-weight: normal;
+	font-style: normal;
 }
-.halloweenFont{
-  font-family: 'HalloweenFont',sans-serif;
-}
-
-@font-face {
-  font-family: 'Welcome';
-  src: url('./assets/fonts/MidnightMinutes_DEMO.otf');
-}
-
-.welcome{
-  font-family: 'Welcome', sans-serif;
+.halloweenFont {
+	font-family: "HalloweenFont", sans-serif;
 }
 
 @font-face {
-  font-family: 'Scary-Halloween';
-  src: url("./assets/fonts/ScaryHalloweenFont.ttf");
+	font-family: "Welcome";
+	src: url("./assets/fonts/MidnightMinutes_DEMO.otf");
 }
-.scary-halloween{
-  font-family: 'Scary-Halloween', sans-serif;
-  
+
+.welcome {
+	font-family: "Welcome", sans-serif;
 }
 
 @font-face {
-  font-family: 'WitchMagic';
-  src: url("./assets/fonts/WitchMagic.ttf");
+	font-family: "Scary-Halloween";
+	src: url("./assets/fonts/ScaryHalloweenFont.ttf");
 }
-
-.WitchMagic{
-  font-family: 'WitchMagic', sans-serif;
-}
-
-@font-face {
-  font-family: 'MagnificentSerif';
-  src: url("./assets/fonts/MagnificentSerif.ttf");
-}
-
-.MagnificentSerif{
-  font-family: 'MagnificentSerif', sans-serif;
+.scary-halloween {
+	font-family: "Scary-Halloween", sans-serif;
 }
 
 @font-face {
-  font-family: "TrickorTreats";
-  src: url("./assets/fonts/TheHoca.ttf");
+	font-family: "WitchMagic";
+	src: url("./assets/fonts/WitchMagic.ttf");
 }
-.trick-or-treats{
-  font-family: 'TrickorTreats', sans-serif;
+
+.WitchMagic {
+	font-family: "WitchMagic", sans-serif;
 }
 
 @font-face {
-  font-family: "Frightmare";
-  src: url("./assets/fonts/HappyHalloween.ttf");
-}
-.Frightmare{
-  font-family: 'Frightmare', sans-serif;
-  background: #FC8E18;
-background: linear-gradient(to right, #FC8E18 0%, #FF7118 50%, #3C3736 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
-}
-@font-face {
-  font-family: "FREAKYHALLOWEEN";
-  src: url("./assets/fonts/FREAKYHALLOWEEN.otf");
-}
-.FREAKYHALLOWEEN{
-  font-family: 'FREAKYHALLOWEEN', sans-serif;
+	font-family: "MagnificentSerif";
+	src: url("./assets/fonts/MagnificentSerif.ttf");
 }
 
+.MagnificentSerif {
+	font-family: "MagnificentSerif", sans-serif;
+}
+
+@font-face {
+	font-family: "TrickorTreats";
+	src: url("./assets/fonts/TheHoca.ttf");
+}
+.trick-or-treats {
+	font-family: "TrickorTreats", sans-serif;
+}
+
+@font-face {
+	font-family: "Frightmare";
+	src: url("./assets/fonts/HappyHalloween.ttf");
+}
+.Frightmare {
+	font-family: "Frightmare", sans-serif;
+	background: #fc8e18;
+	background: linear-gradient(to right, #fc8e18 0%, #ff7118 50%, #3c3736 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+@font-face {
+	font-family: "FREAKYHALLOWEEN";
+	src: url("./assets/fonts/FREAKYHALLOWEEN.otf");
+}
+.FREAKYHALLOWEEN {
+	font-family: "FREAKYHALLOWEEN", sans-serif;
+}
+
+@font-face {
+	font-family: "SquareOne";
+	src: url("./assets/fonts/TypeMachine.ttf");
+}
+.square-one {
+	font-family: "SquareOne", sans-serif;
+}

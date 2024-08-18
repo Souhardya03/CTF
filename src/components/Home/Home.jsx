@@ -10,11 +10,6 @@ const Home = () => {
 	return (
 		<>
 			<div className="home-back h-full w-full">
-				{/* <img
-					src={homeback}
-					alt="Background"
-					className={`absolute top-0 left-0 w-full h-full object-cover  transition-opacity duration-500 `}
-				/> */}
 				<Navbar />
 				<motion.div
 					exit="out"
