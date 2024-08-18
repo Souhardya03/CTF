@@ -72,11 +72,29 @@ What We Do:
 			return () => clearTimeout(timeoutId);
 		}
 	}, [startTyping, index, fullText]);
+	const [scrolled, setScrolled] = useState(false);
+	useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            if (scrollTop > 50) {
+				console.log("scroll");
+				
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
 
 	return (
 		<>
 			<div className="about-back overflow-x-hidden w-full">
-				<Navbar />
+				<Navbar scrolled={scrolled}/>
 				<motion.div
 					exit="out"
 					animate="in"

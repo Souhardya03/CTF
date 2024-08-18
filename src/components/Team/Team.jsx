@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import { motion } from "framer-motion";
 import { pageVariants, pageTransition } from "../Framer/Framer";
@@ -7,10 +7,30 @@ import WitchStick from "../../assets/images/witch-stick.png";
 
 
 const Team = () => {
+	const [scrolled, setScrolled] = useState(false);
+	useEffect(() => {
+        const handleScroll = () => {
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            if (scrollTop > 50) {
+				console.log("scroll");
+				
+                setScrolled(true);
+            } else {
+                setScrolled(false);
+            }
+        };
+
+        window.addEventListener("scroll", handleScroll);
+        return () => {
+            window.removeEventListener("scroll", handleScroll);
+        };
+    }, []);
+	
+	
 	return (
 		<>
-			<div className="about-back h-[100vh] w-full">
-				<Navbar />
+			<div className="about-back h-[200vh] w-full">
+				<Navbar scrolled={scrolled}/>
 				<motion.div
 					exit="out"
 					animate="in"
