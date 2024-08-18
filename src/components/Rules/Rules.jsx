@@ -8,6 +8,7 @@ import Footer from "../Footer/Footer";
 const Rules = () => {
 	return (
 		<div className="">
+			<Navbar />
 			<div className="rules-back  w-full">
 				{/* <img
 				src={rulesback}
@@ -15,7 +16,7 @@ const Rules = () => {
 				className={`absolute top-0 left-0 w-full   object-cover  transition-opacity duration-500 
 				`}
 				/> */}
-				<Navbar />
+				
 				<motion.div
 					exit="out"
 					animate="in"
@@ -23,8 +24,8 @@ const Rules = () => {
 					variants={pageVariants}
 					transition={pageTransition}>
 					<div
-						className={`  transition-opacity no-scrollbar overflow-x-hidden duration-500 lg:h-full h-[100vh] `}>
-						<div className="text-white no-scrollbar  mt-20 lg:mt-14  h-[90vh]   lg:h-[84.1vh] flex  overflow-y-auto items-center flex-col p-4 lg:p-14 ">
+						className={`  transition-opacity no-scrollbar overflow-x-hidden duration-500 lg:h-full  `}>
+						<div className="text-white no-scrollbar  mt-20 lg:mt-14     lg:h-[84.1vh] flex  overflow-y-auto items-center flex-col p-4 lg:p-14 ">
 							<div className="lg:w-[70%] flex flex-col items-center justify-center">
 								<div className="text-6xl fade-out flex  items-center Frightmare ">
 									Rules
