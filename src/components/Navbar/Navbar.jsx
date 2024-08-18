@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import logo from "../../assets/images/Logo.png";
 const Navbar = () => {	
 	return (
-		<nav className="flex fixed top-0 justify-between px-4 p-1 z-10 bg-[#1a191974] items-center w-full">
+		<nav className="flex fixed top-0 justify-between px-4 p-1 z-10 bg-[#1a19199c] items-center w-full">
 			<div className="flex items-center gap-2 ">
 				<div className="text-white flex items-center justify-center rounded-full overflow-hidden">
 					<img

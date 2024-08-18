@@ -7,8 +7,8 @@ import Footer from "../Footer/Footer";
 
 const Rules = () => {
 	return (
-		<>
-			<div className="rules-back h-full  w-full">
+		<div className="">
+			<div className="rules-back  w-full">
 				{/* <img
 				src={rulesback}
 				alt="Background"
@@ -23,8 +23,8 @@ const Rules = () => {
 					variants={pageVariants}
 					transition={pageTransition}>
 					<div
-						className={`  transition-opacity overflow-x-hidden duration-500 `}>
-						<div className="text-white  mt-20 lg:mt-14 h-[78vh] lg:h-[84.1vh] flex  overflow-y-auto items-center flex-col p-4 lg:p-14 ">
+						className={`  transition-opacity overflow-x-hidden duration-500 h-[100vh] `}>
+						<div className="text-white  mt-20 lg:mt-14  h-[90vh]   lg:h-[84.1vh] flex  overflow-y-auto items-center flex-col p-4 lg:p-14 ">
 							<div className="lg:w-[70%] flex flex-col items-center justify-center">
 								<div className="text-6xl fade-out flex  items-center Frightmare ">
 									Rules
@@ -32,7 +32,7 @@ const Rules = () => {
 								<div className=" move-up flex flex-col  FREAKYHALLOWEEN mt-4">
 									<div className="flex items-center justify-center gap-2">
 										<div className="text-[35px] text-orange-400">E</div>
-										<div className="trick-or-treats text-sm lg:text-lg pt-3">
+										<div className="trick-or-treats text-sm  lg:text-lg pt-3">
 											Participants are allowed to use any tool (online /
 											offline) for solving the challenges
 										</div>
@@ -111,7 +111,7 @@ const Rules = () => {
 				</motion.div>
 				<Footer />
 			</div>
-		</>
+		</div>
 	);
 };
 
