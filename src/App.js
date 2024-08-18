@@ -10,6 +10,8 @@ import PixieDust from "./components/PixieDust/PixieDust.jsx";
 import About from "./components/About/About.jsx";
 import Team from "./components/Team/Team.jsx";
 import Contact from "./components/Contact/Contact.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
 function App() {
 	const MainWithLoader = WithLoader(Main);
 	const HomeWithLoader = WithLoader(Home);
@@ -21,6 +23,8 @@ function App() {
 	return (
 		<>
 			<PixieDust />
+			
+			
 			<AnimatePresence mode="wait">
 				<Routes
 					location={location}

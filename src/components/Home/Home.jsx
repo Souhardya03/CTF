@@ -9,7 +9,7 @@ import Timer from "../Timer/Timer";
 const Home = () => {
 	return (
 		<>
-			<div className="home-back h-full w-full">
+			<div className="home-back h-[100vh] w-full">
 				<Navbar />
 				<motion.div
 					exit="out"
@@ -18,7 +18,7 @@ const Home = () => {
 					variants={pageVariants}
 					transition={pageTransition}>
 					<div className={` relative z-10 transition-opacity duration-500 `}>
-						<div className="text-white lg:h-[91.7vh] flex justify-center pt-28 items-center flex-col p-6 lg:p-14 ">
+						<div className="text-white lg:h-[91.7vh] h-[91.7vh] flex justify-center pt-28 items-center flex-col p-6 lg:p-14 ">
 							<div className="lg:w-[60%]">
 								<div className="lg:text-5xl text-3xl fade-out text-center WitchMagic">
 									<span className="text-glow">WELCOME TO </span>

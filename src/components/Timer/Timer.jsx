@@ -60,7 +60,7 @@ const Timer = () => {
 	};
 
 	return (
-		<div className="lg:mt-28 mt-8 text-xs trick-or-treats font-bold">
+		<div className="lg:mt-28 mt-8 text-xs lg:text-lg trick-or-treats font-bold">
 			{state.second < 0 ? (
 				<div>Happy Hacking!</div>
 			) : (

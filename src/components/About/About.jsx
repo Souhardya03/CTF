@@ -75,7 +75,7 @@ What We Do:
 
 	return (
 		<>
-			<div className="about-back overflow-x-hidden h-[100vh] w-full">
+			<div className="about-back overflow-x-hidden w-full">
 				<Navbar />
 				<motion.div
 					exit="out"
@@ -139,8 +139,8 @@ What We Do:
 						</div>
 					</div>
 				</motion.div>
-				<Footer />
 			</div>
+				<Footer />
 		</>
 	);
 };
