@@ -22,7 +22,7 @@ const Navbar = ({ scrolled }) => {
                     Z3r0<span className="text-white">D4Y</span>
                 </div>
             </div>
-            <div className={`flex lg:flex-row lg:relative absolute duration-200 justify-center lg:bg-transparent flex-col top-[4rem] lg:h-full rounded-md ${openNav?"h-[28vh] opacity-100":"hidden opacity-0 pointer-events-none"} right-2 lg:top-0  text-center bg-[#141313ec] text-white scary-halloween gap-2 w-1/2 lg:p-0 p-4 lg:w-full lg:gap-8`}>
+            <div className={`flex lg:flex-row lg:relative absolute duration-200 justify-center lg:bg-transparent flex-col top-[4rem] lg:h-full rounded-md ${openNav?"opacity-100":" opacity-0 pointer-events-none"} lg:opacity-100 opacity-0 right-2 lg:top-0  text-center bg-[#141313ec] text-white scary-halloween gap-2 w-1/2 lg:p-0 p-4 lg:w-full lg:gap-8`}>
                 <NavLink
                     to="/home"
                     style={({ isActive }) =>
