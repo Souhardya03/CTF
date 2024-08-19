@@ -10,19 +10,19 @@ const Navbar = ({ scrolled }) => {
                 scrolled ? 'bg-[#1a1919f6]' : 'bg-[#1a19193d]'
             }`}
         >
-            <div className="flex items-center gap-2">
-                <div className="text-white flex items-center justify-center rounded-full overflow-hidden">
+            <div className="flex items-center   gap-2">
+                <div className="text-white flex w-full items-center justify-center rounded-full overflow-hidden">
                     <img
                         src={logo}
                         alt=""
-                        className="lg:w-16 lg:h-16 w-12 h-12 object-center"
+                        className="lg:w-16 lg:h-16 w-12 h-12 "
                     />
                 </div>
                 <div className="text-xl text-red-500 WitchMagic">
                     Z3r0<span className="text-white">D4Y</span>
                 </div>
             </div>
-            <div className={`flex lg:flex-row lg:relative absolute duration-200 justify-center lg:bg-transparent flex-col top-[4rem] lg:h-full rounded-md ${openNav?"opacity-100":" opacity-0 pointer-events-none"} lg:opacity-100 opacity-0 right-2 lg:top-0  text-center bg-[#141313ec] text-white scary-halloween gap-2 w-1/2 lg:p-0 p-4 lg:w-full lg:gap-8`}>
+            <div className={`flex lg:flex-row lg:relative absolute duration-200 justify-center lg:bg-transparent flex-col top-[4rem] lg:h-full rounded-md ${openNav?"opacity-100":" opacity-0 pointer-events-none"} lg:opacity-100 lg:pointer-events-auto opacity-0 right-2 lg:top-0  text-center bg-[#141313ec] text-white scary-halloween gap-2 w-1/2 lg:p-0 p-4 lg:w-1/2  lg:gap-8`}>
                 <NavLink
                     to="/home"
                     style={({ isActive }) =>
