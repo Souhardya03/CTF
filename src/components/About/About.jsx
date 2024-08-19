@@ -134,7 +134,7 @@ What We Do:
 										{showCommand && (
 											<div className="w-[80%] square-one ml-2">
 												<pre className="text-white square-one text-[1rem]">
-													cat about.txt/
+													cat about.txt
 												</pre>
 											</div>
 										)}
