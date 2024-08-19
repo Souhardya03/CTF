@@ -60,29 +60,29 @@ const Timer = () => {
 	};
 
 	return (
-		<div className="lg:mt-20 animate-scale mt-8 text-xs md:text-lg lg:text-lg trick-or-treats font-bold">
+		<div className="lg:mt-20 animate-scale mt-10 text-[0.89rem] md:text-lg lg:text-lg trick-or-treats font-bold">
 			{state.second < 0 ? (
 				<div>Happy Hacking!</div>
 			) : (
-				<div className="flex items-center gap-2 lg:gap-3">
+				<div className="flex items-center gap-1 lg:gap-3">
 					<div className="flex p-4 rounded-md flex-col justify-center items-center bg-[#1a1919b5]">
 						<div>{state.days || "00"}</div>
-						<div className="text-yellow-400">Days</div>
+						<div className="text-yellow-400 text-xs">Days</div>
 					</div>
 					<div>:</div>
 					<div className="flex p-4 rounded-md flex-col justify-center items-center bg-[#1a1919b5]">
 						<div>{state.hours || "00"}</div>
-						<div className="text-yellow-400">Hours</div>
+						<div className="text-yellow-400 text-xs">Hours</div>
 					</div>
 					<div>:</div>
 					<div className="flex p-4 rounded-md flex-col justify-center items-center bg-[#1a1919b5]">
 						<div>{state.minutes || "00"}</div>
-						<div className="text-yellow-400">Minutes</div>
+						<div className="text-yellow-400 text-xs">Minutes</div>
 					</div>
 					<div>:</div>
 					<div className="flex p-4 rounded-md flex-col justify-center items-center bg-[#1a1919b5]">
 						<div>{state.seconds || "00"}</div>
-						<div className="text-yellow-400">Seconds</div>
+						<div className="text-yellow-400 text-xs">Seconds</div>
 					</div>
 				</div>
 			)}
