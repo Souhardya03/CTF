@@ -23,8 +23,6 @@ function App() {
 	return (
 		<>
 			<PixieDust />
-			
-			
 			<AnimatePresence mode="wait">
 				<Routes
 					location={location}
