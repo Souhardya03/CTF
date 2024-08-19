@@ -27,7 +27,7 @@ const Rules = () => {
 	return (
 		<div className="">
 			<Navbar scrolled={scrolled}/>
-			<div className="rules-back  w-full">
+			<div className="rules-back lg:h-full  w-full">
 				{/* <img
 				src={rulesback}
 				alt="Background"
@@ -43,7 +43,7 @@ const Rules = () => {
 					transition={pageTransition}>
 					<div
 						className={`  transition-opacity no-scrollbar overflow-x-hidden duration-500 lg:h-full  `}>
-						<div className="text-white no-scrollbar  mt-20 lg:mt-14     lg:h-[84.1vh] flex  overflow-y-auto items-center flex-col p-4 lg:p-14 ">
+						<div className="text-white no-scrollbar  mt-20 lg:mt-14   md:h-[90vh]  lg:h-[84.1vh] flex  overflow-y-auto items-center flex-col p-4 lg:p-14 ">
 							<div className="lg:w-[70%] flex flex-col items-center justify-center">
 								<div className="text-6xl fade-out flex  items-center Frightmare ">
 									Rules

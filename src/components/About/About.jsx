@@ -89,7 +89,7 @@ What We Do:
 
 	return (
 		<>
-			<div className="about-back overflow-x-hidden w-full">
+			<div className="about-back overflow-x-hidden lg:h-full md:h-[95vh] w-full">
 				<Navbar scrolled={scrolled}/>
 				<motion.div
 					exit="out"
@@ -113,7 +113,7 @@ What We Do:
 								<span className="glow-white">US</span>
 							</div>
 						</div>
-						<div className="h-[70vh] mb-6 lg:p-4 mt-4 animate-scale bg-[#2423237c] rounded-md w-[95%] lg:w-2/3">
+						<div className="h-[70vh] mb-6 lg:p-4 mt-4 animate-scale no-scrollbar bg-[#2423237c] rounded-md w-[95%] lg:w-2/3">
 							<div className="w-full h-full">
 								<div className="terminal_toolbar">
 									<div className="butt">
