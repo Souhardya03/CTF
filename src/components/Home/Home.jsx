@@ -19,7 +19,7 @@ const Home = () => {
 					transition={pageTransition}>
 					<div className={` relative z-10  transition-opacity duration-500 `}>
 						<div className="text-white h-[91.7vh]  flex justify-center pt-28 items-center flex-col p-6 lg:p-14 ">
-							<div className="lg:w-[60%]">
+							<div className="lg:w-[60%] lg:mt-14">
 								<div className="lg:text-5xl text-3xl fade-out text-center WitchMagic">
 									<span className="text-glow">WELCOME TO </span>
 									<span className="text-orange-500 lg:text-6xl MagnificentSerif">
