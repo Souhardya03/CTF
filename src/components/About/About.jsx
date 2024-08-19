@@ -98,7 +98,7 @@ What We Do:
 					variants={pageVariants}
 					transition={pageTransition}>
 					<div className="flex text-white pt-32 h-full flex-col justify-center items-center relative">
-						<div className="WitchMagic text-5xl relative flex flex-col items-center">
+						<div className="WitchMagic text-5xl animate-down relative flex flex-col items-center">
 							{/* Hat image */}
 							<div className="w-[50%] -left-[4.5rem] absolute lg:top-[-5.8rem] top-[-5rem] z-[2] -rotate-45">
 								<img
@@ -113,7 +113,7 @@ What We Do:
 								<span className="glow-white">US</span>
 							</div>
 						</div>
-						<div className="h-[70vh] mb-6 lg:p-4 mt-4 bg-[#2423237c] rounded-md w-[95%] lg:w-2/3">
+						<div className="h-[70vh] mb-6 lg:p-4 mt-4 animate-scale bg-[#2423237c] rounded-md w-[95%] lg:w-2/3">
 							<div className="w-full h-full">
 								<div className="terminal_toolbar">
 									<div className="butt">

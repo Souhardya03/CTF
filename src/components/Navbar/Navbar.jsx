@@ -25,6 +25,7 @@ const Navbar = ({ scrolled }) => {
             <div className={`flex lg:flex-row lg:relative absolute duration-200 justify-center lg:bg-transparent flex-col top-[4rem] lg:h-full rounded-md ${openNav?"opacity-100":" opacity-0 pointer-events-none"} lg:opacity-100 lg:pointer-events-auto opacity-0 right-2 lg:top-0  text-center bg-[#141313ec] text-white scary-halloween gap-2 w-1/2 lg:p-0 p-4 lg:w-1/2  lg:gap-8`}>
                 <NavLink
                     to="/home"
+                    className="hover:text-orange-500 duration-150 hover:scale-105"
                     style={({ isActive }) =>
                         isActive ? { color: "rgb(249,115,22)" } : {}
                     }
@@ -33,6 +34,7 @@ const Navbar = ({ scrolled }) => {
                 </NavLink>
                 <NavLink
                     to="/rules"
+                    className="hover:text-orange-500 duration-150 hover:scale-105"
                     style={({ isActive }) =>
                         isActive ? { color: "rgb(249,115,22)" } : {}
                     }
@@ -41,6 +43,7 @@ const Navbar = ({ scrolled }) => {
                 </NavLink>
                 <NavLink
                     to="/team"
+                    className="hover:text-orange-500 duration-150 hover:scale-105"
                     style={({ isActive }) =>
                         isActive ? { color: "rgb(249,115,22)" } : {}
                     }
@@ -50,6 +53,7 @@ const Navbar = ({ scrolled }) => {
                 <NavLink to="/contact">Contact</NavLink>
                 <NavLink
                     to="/about"
+                    className="hover:text-orange-500 duration-150 hover:scale-105"
                     style={({ isActive }) =>
                         isActive ? { color: "rgb(249,115,22)" } : {}
                     }

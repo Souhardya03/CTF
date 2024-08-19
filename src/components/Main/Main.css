@@ -36,14 +36,3 @@
     }
 }
 
-.animate-down{
-    animation: down 1.6s ;
-
-}
-@keyframes down {
-    0%{
-        transform: translateY(-100px);
-    }
-
-    
-}

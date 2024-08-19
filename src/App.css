@@ -77,3 +77,31 @@
 .square-one {
 	font-family: "SquareOne", sans-serif;
 }
+
+.animate-down {
+	animation: down 1.6s;
+}
+@keyframes down {
+	0% {
+		transform: translateY(-100px);
+	}
+}
+.animate-up {
+	animation: up 1.6s;
+}
+@keyframes up {
+	0% {
+		transform: translateY(80px);
+	}
+}
+.animate-scale {
+	animation: scale 1.6s;
+}
+@keyframes scale {
+	0% {
+		transform: scale(0.5);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
