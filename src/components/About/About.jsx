@@ -7,12 +7,8 @@ import AboutHat from "../../assets/images/about-hat.png";
 import Footer from "../Footer/Footer";
 
 const About = () => {
-	
 
-	
-
-	const fullText = `
-Welcome to zero_logon,
+	const fullText = `Welcome to zero_logon,
 The cyber security club of JGEC.
 
 At our club, we are passionate about learning how to protect digital landscapes and aware everyone to ensure online safety for everyone. Whether you're an intermediate cybersecurity learner or just starting your journey into the world of cyber defense, you'll find a community of like-minded individuals eager to learn, share, and grow together.
