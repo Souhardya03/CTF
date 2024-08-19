@@ -29,7 +29,7 @@ const Team = () => {
 	
 	return (
 		<>
-			<div className="about-back h-[100vh] w-full">
+			<div className="about-back overflow-x-hidden h-[100vh] w-full">
 				<Navbar scrolled={scrolled}/>
 				<motion.div
 					exit="out"
