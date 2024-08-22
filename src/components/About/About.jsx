@@ -10,31 +10,32 @@ const About = () => {
 
 	const fullText = `Welcome to zero_logon,
 The cyber security club of JGEC.
+At our club, we are passionate about learning how to protect digital landscapes and aware everyone to ensure online safety for everyone. Whether you're a intermediate cybersecurity learner or just starting your journey into the world of cyber defense, you'll find a community of like-minded individuals eager to learn, share, and grow together.
 
-At our club, we are passionate about learning how to protect digital landscapes and aware everyone to ensure online safety for everyone. Whether you're an intermediate cybersecurity learner or just starting your journey into the world of cyber defense, you'll find a community of like-minded individuals eager to learn, share, and grow together.
-
+About
 Zero_logon is established in 2022, in the guidance of Syed Modassir Ali, (..,Solarwinds). 
 
-Who are we? 
-We are students of different departments of JGEC, united by a common goal: to enhance our skills, share knowledge and address the evolving challenges in the cyber world.
+Who are we: 
+We are students of different departments of JGEC, united by common goal: to enhance our skills, share knowledge and address the evolving challenges in cyber world.
 
 What We Do:
-
     Educational Workshops & Seminars: 
     We offer hands-on training sessions and presentations on the latest cybersecurity topics, from ethical hacking and threat analysis to cryptography and incident response.
-
 
     Networking Opportunities: 
     Connect with experts, industry leaders, and fellow members through our events and forums. Building a strong network is key to staying informed and advancing in the field.
 
-
     Collaborative Projects: 
     Engage in real-world challenges and collaborative projects that enhance practical skills and provide valuable experience.
 
-
     Resources & Tools: 
     Access a wealth of resources, including articles, research papers, and toolkits designed to keep you at the forefront of cybersecurity.
-    `;
+
+   Our Values:
+
+    Knowledge Sharing: We believe in the power of collective learning and strive to create an environment where information is freely shared and discussed.
+
+    Integrity: Trust and ethics are at the core of cybersecurity. We uphold high standards of integrity and professionalism in all our activities.`;
 
 	const [showCommand, setShowCommand] = useState(false); // Control when to show "cat about.txt/"
 	const [terminalContent, setTerminalContent] = useState("");
