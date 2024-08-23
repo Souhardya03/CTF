@@ -12,6 +12,7 @@ import Team from "./components/Team/Team.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
+import Register from "./components/User/Register.jsx";
 function App() {
 	const MainWithLoader = WithLoader(Main);
 	const HomeWithLoader = WithLoader(Home);
@@ -19,6 +20,7 @@ function App() {
 	const AboutWithLoader = WithLoader(About);
 	const TeamWithLoader = WithLoader(Team);
 	const ContactWithLoader = WithLoader(Contact);
+	const RegisterWithLoader = WithLoader(Register);
 	const location = useLocation();
 	return (
 		<>
@@ -50,6 +52,10 @@ function App() {
 					<Route
 						path="/contact"
 						element={<ContactWithLoader />}
+					/>
+					<Route
+						path="/register"
+						element={<RegisterWithLoader />}
 					/>
 				</Routes>
 			</AnimatePresence>
