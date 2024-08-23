@@ -105,3 +105,54 @@
 		transform: scale(1);
 	}
 }
+
+
+
+.card-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content:center;
+	padding: 40px;
+	gap: 120px;
+  }
+  
+  .card {
+	
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	width: 300px;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	padding: 20px;
+	margin: 10px;
+  }
+  
+  .card-image {
+	width: 100%;
+	height: auto;
+	border-radius: 50%;
+	margin-bottom: 15px;
+  }
+  
+  .card h2 {
+	color: #f0980b;
+	font-size: 1.5rem;
+	margin: 10px 0;
+  }
+  
+  .card p {
+	color: #777;
+	font-size: 1rem;
+	margin-bottom: 15px;
+  }
+  
+  .social-links a {
+	margin: 0 10px;
+	display: inline-block;
+  }
+  
+  .social-links img {
+	width: 24px;
+	height: 24px;
+  }
+  
