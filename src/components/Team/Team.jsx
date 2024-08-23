@@ -5,7 +5,7 @@ import { pageVariants, pageTransition } from "../Framer/Framer";
 import Footer from "../Footer/Footer";
 import WitchStick from "../../assets/images/witch-stick.png";
 
-
+import DisplayCard from "../Team/DisplayCards.jsx"
 const Team = () => {
 	const [scrolled, setScrolled] = useState(false);
 	useEffect(() => {
@@ -49,6 +49,7 @@ const Team = () => {
                             </div>
 						</div>
 					</div>
+					<DisplayCard/>
 				</motion.div>
 			</div>
 		</>
