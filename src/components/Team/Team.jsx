@@ -3,55 +3,62 @@ import Navbar from "../Navbar/Navbar";
 import { motion } from "framer-motion";
 import { pageVariants, pageTransition } from "../Framer/Framer";
 import Footer from "../Footer/Footer";
+import "./Team.css";
 import WitchStick from "../../assets/images/witch-stick.png";
 
-import DisplayCard from "../Team/DisplayCards.jsx"
+import DisplayCard from "../Team/DisplayCards.jsx";
 const Team = () => {
 	const [scrolled, setScrolled] = useState(false);
 	useEffect(() => {
-        const handleScroll = () => {
-            const scrollTop = window.scrollY || document.documentElement.scrollTop;
-            if (scrollTop > 50) {
+		const handleScroll = () => {
+			const scrollTop = window.scrollY || document.documentElement.scrollTop;
+			if (scrollTop > 20) {
 				console.log("scroll");
-				
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        };
 
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
-	
-	
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+
 	return (
 		<>
-			<div className="about-back overflow-x-hidden h-[100vh] w-full">
-				<Navbar scrolled={scrolled}/>
+			<div className="team-back overflow-x-hidden lg:h-full h-full md:h-[95vh] w-full">
+				<Navbar scrolled={scrolled} />
 				<motion.div
 					exit="out"
 					animate="in"
 					initial="init"
 					variants={pageVariants}
 					transition={pageTransition}>
-					<div className="flex text-white lg:pt-40 pt-24 flex-col justify-center items-center relative">
+					<div className="flex text-white  lg:pt-20 pt-24 flex-col justify-center items-center relative">
 						<div className="WitchMagic lg:text-5xl relative flex flex-col text-4xl items-center">
-							
 							{/* Text */}
 							<div className="z-[1] ">
-								<span className="glow-white lg:text-5xl">MEET OUR</span> <span className=" text-red-500">TEAM</span>
+								<span className="glow-white lg:text-5xl">MEET OUR</span>{" "}
+								<span className=" text-red-500">TEAM</span>
 							</div>
-                            <div className="w-full">
-                                <img src={WitchStick} className="absolute glow-effect left-[3rem] w-[80%] -top-[4.6rem] lg:-top-[6.2rem] rotate-[215deg]" alt="" />
-                            </div>
+							<div className="w-full">
+								<img
+									src={WitchStick}
+									className="absolute glow-effect left-[3rem] w-[80%] -top-[4.6rem] lg:-top-[6.2rem] rotate-[215deg]"
+									alt=""
+								/>
+							</div>
 						</div>
 					</div>
-					<DisplayCard/>
+						<div className="w-full px-2 mb-4">
+							<DisplayCard />
+						</div>
 				</motion.div>
 			</div>
+			<Footer />
 		</>
 	);
 };
