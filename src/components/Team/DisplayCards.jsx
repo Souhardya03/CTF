@@ -26,8 +26,8 @@ const people = [
   },
   {
     image: IMG,
-    name: 'Person 3',
-    role: 'Frontend Developer',
+    name: 'Manjulika',
+    role: 'Kono kaj kore na',
     socialLinks: [
       { name: 'Twitter', url: 'https://twitter.com', icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid" },
       { name: 'LinkedIn', url: 'https://linkedin.com', icon: "https://www.vectorico.com/wp-content/uploads/2018/02/LinkedIn-Icon-Square-Dark.png" },
