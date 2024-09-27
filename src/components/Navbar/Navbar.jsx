@@ -7,7 +7,7 @@ const Navbar = ({ scrolled }) => {
 	return (
 		<nav
 			className={`flex fixed top-0 justify-between items-center lg:px-4 px-2  p-1 z-10 w-full transition-colors duration-300 ${
-				scrolled ? "bg-[#1a1919f6]" : "bg-[#1a19193d]"
+				scrolled ? "bg-[#1a1919f6]" : "bg-[#1a191983]"
 			}`}>
 			<div className="flex items-center   gap-2">
 				<div className="text-white flex w-full items-center justify-center rounded-full overflow-hidden">
@@ -49,7 +49,7 @@ const Navbar = ({ scrolled }) => {
 					}>
 					Team
 				</NavLink>
-				<NavLink to="/contact">Contact</NavLink>
+				
 				<NavLink
 					to="/about"
 					className="hover:text-orange-500 duration-150 hover:scale-105"

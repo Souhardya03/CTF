@@ -4,132 +4,114 @@ import "./Rules.css";
 import { motion } from "framer-motion";
 import { pageVariants, pageTransition } from "../Framer/Framer";
 import Footer from "../Footer/Footer";
+import rules_stick from "../../assets/images/rules-stick.png";
+import rule_back from "../../assets/images/rules-background.jpg"
 
 const Rules = () => {
 	const [scrolled, setScrolled] = useState(false);
-	useEffect(() => {
-        const handleScroll = () => {
-            const scrollTop = window.scrollY || document.documentElement.scrollTop;
-            if (scrollTop > 50) {
-				console.log("scroll");
-				
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        };
 
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+	const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const loadImage = async () => {
+      const image = new Image();
+      image.src = rule_back;
+      image.onload = () => {
+        setLoading(false);
+      };
+    };
+
+    loadImage();
+
+    const handleScroll = () => {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+      if (scrollTop > 20) {
+        console.log("scroll");
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="loader-container">
+        <div className="loader"></div>
+      </div>
+    );
+  }
+
 	return (
 		<div className="">
-			<Navbar scrolled={scrolled}/>
-			<div className="rules-back lg:h-full  w-full">
+			<Navbar scrolled={scrolled} />
+			<div className="rules-back lg:min-h-screen flex justify-center w-full">
+				{/* Optional: Uncomment if background image is needed */}
 				{/* <img
-				src={rulesback}
-				alt="Background"
-				className={`absolute top-0 left-0 w-full   object-cover  transition-opacity duration-500 
-				`}
-				/> */}
-				
+          src={rulesback}
+          alt="Background"
+          className={`absolute top-0 left-0 w-full object-cover transition-opacity duration-500`}
+        /> */}
+
+				{/* Animation wrapper */}
 				<motion.div
 					exit="out"
 					animate="in"
 					initial="init"
 					variants={pageVariants}
 					transition={pageTransition}>
-					<div
-						className={`  transition-opacity no-scrollbar overflow-x-hidden duration-500 lg:h-full  `}>
-						<div className="text-white no-scrollbar  mt-20 lg:mt-14   md:h-[90vh]  lg:h-[84.1vh] flex  overflow-y-auto items-center flex-col p-4 lg:p-14 ">
-							<div className="lg:w-[70%] flex flex-col items-center justify-center">
-								<div className="text-6xl fade-out flex  items-center Frightmare ">
-									Rules
-								</div>
-								<div className=" move-up flex flex-col  FREAKYHALLOWEEN mt-4">
-									<div className="flex items-center justify-center gap-2">
-										<div className="text-[35px] text-orange-400">E</div>
-										<div className="trick-or-treats text-sm  lg:text-lg pt-3">
-											Participants are allowed to use any tool (online /
-											offline) for solving the challenges
-										</div>
-									</div>
-									<div className="flex items-center gap-1">
-										<div className="text-[35px] text-orange-400">A</div>
-										<div className="trick-or-treats text-sm lg:text-lg pt-3">
-											Flag sharing is strictly prohibited. It will cause ban
-											from the CTF for both the players
-										</div>
-									</div>
-									<div className="flex items-center pl-2 gap-2">
-										<div className="text-[35px] text-orange-400">L</div>
-										<div className="trick-or-treats text-sm lg:text-lg pt-3">
-											The time duration of the CTF is 2.30 hours
-										</div>
-									</div>
-									<div className="flex items-center pl-4 gap-2">
-										<div className="text-[35px] text-orange-400">T</div>
-										<div className="trick-or-treats text-sm lg:text-lg pt-3">
-											Any type of attack on the CTF website is strictly
-											prohibited
-										</div>
-									</div>
-								</div>
-							</div>
-							<div className="lg:w-[70%] flex flex-col items-center justify-center">
-								<div className="text-6xl pt-14 fade-out flex justify-center items-center Frightmare ">
-									FAQs
-								</div>
-								<div className=" move-up flex flex-col justify-center FREAKYHALLOWEEN mt-4">
-									<div className="flex  gap-2">
-										<div className="text-[35px] text-orange-400">E</div>
-										<div className="flex flex-col justify-center">
-											<div className="trick-or-treats text-sm lg:text-lg pt-4">
-												What is the SLAY_CTF?
-											</div>
-											<div className="scary-halloween pl-4">
-												SLAY_CTF is an hybrid mode jeopardy-CTF competition.
-												"Capture The Flag" (CTF) competitions are not related to
-												running outdoors or playing first-person shooters.
-												Instead, they consist of a set of computer security
-												puzzles (or challenges) involving reverse-engineering,
-												memory corruption, cryptography, web technologies, and
-												more. When players solve them they get a "flag", a
-												secret string which can be exchanged for points. The
-												more points a player earns, the higher up they move in
-												rank.
-											</div>
-										</div>
-									</div>
-									<div className="flex items-center gap-1">
-										<div className="text-[35px] text-orange-400">A</div>
-										<div className="trick-or-treats text-sm lg:text-lg pt-3">
-											Flag sharing is strictly prohibited. It will cause ban
-											from the CTF for both the players
-										</div>
-									</div>
-									<div className="flex items-center pl-2 gap-2">
-										<div className="text-[35px] text-orange-400">L</div>
-										<div className="trick-or-treats text-sm lg:text-lg pt-3">
-											The time duration of the CTF is 2.30 hours
-										</div>
-									</div>
-									<div className="flex items-center pl-4 gap-2">
-										<div className="text-[35px] text-orange-400">T</div>
-										<div className="trick-or-treats text-sm lg:text-lg pt-3">
-											Any type of attack on the CTF website is strictly
-											prohibited
-										</div>
-									</div>
-								</div>
-							</div>
+					{/* You can place animated content here */}
+				
+
+				{/* Content Section */}
+				<div className="flex text-white w-full lg:pt-24 pt-20 flex-col justify-center items-center relative">
+					<div className="MagnificentSerif lg:text-6xl relative flex flex-col text-5xl items-center">
+						<div className=" ">
+							<span className=" text-[#f48619] WitchMagic">RULES</span>
+						</div>
+						<div className="w-full">
+							<img
+								src={rules_stick}
+								className="absolute glow-effect left-[1rem] w-[60%] -top-[3.9rem] lg:-top-[4.8rem] rotate-[255deg]"
+								alt=""
+							/>
 						</div>
 					</div>
-				</motion.div>
-				<Footer />
+					<ul className="text-white w-[90%] lg:w-[60%] flex-col gap-8 trick-or-treats rounded-md bg-[#3e3c3c89] flex  my-8 pl-10 px-8 p-4  ">
+						<li className="text-sm lg:text-[18px] font-medium">
+							This is a team-only event. You must either create a team during
+							registration, join an existing team, or request an invite link
+							from a team leader.
+						</li>
+						<li className=" text-sm lg:text-[18px] font-medium">
+							Teams can have up to 5 members (including the Team Leader) and
+							must be registered before the event.
+						</li>
+						<li className=" text-sm lg:text-[18px] font-medium">
+							All team members can submit flags during the competition, but only
+							the team leader can officially join the event.
+						</li>
+						<li className=" text-sm lg:text-[18px] font-medium">
+							Denial of D-CTF’s infrastructure is strictly prohibited.
+						</li>
+						<li className=" text-sm lg:text-[18px] font-medium">
+							Finding bugs in the D-CTF infrastructure can earn your team extra
+							points.
+						</li>
+						<li className=" text-sm lg:text-[18px] font-medium">
+							The golden rule: Hack before you get hacked!
+						</li>
+					</ul>
+				</div>
+        </motion.div>
 			</div>
+      
+			<Footer />
 		</div>
 	);
 };

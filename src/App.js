@@ -39,15 +39,15 @@ function App() {
 					/>
 					<Route
 						path="/rules"
-						element={<RulesWithLoader />}
+						element={<Rules />}
 					/>
 					<Route
 						path="/about"
-						element={<AboutWithLoader />}
+						element={<About />}
 					/>
 					<Route
 						path="/team"
-						element={<TeamWithLoader />}
+						element={<Team />}
 					/>
 					<Route
 						path="/contact"

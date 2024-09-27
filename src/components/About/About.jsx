@@ -5,7 +5,7 @@ import { pageVariants, pageTransition } from "../Framer/Framer";
 import "./About.css";
 import AboutHat from "../../assets/images/about-hat.png";
 import Footer from "../Footer/Footer";
-
+import about_back from "../../assets/images/about-back.jpg"
 const About = () => {
 
 	const fullText = `Welcome to zero_logon,
@@ -70,23 +70,42 @@ What We Do:
 		}
 	}, [startTyping, index, fullText]);
 	const [scrolled, setScrolled] = useState(false);
-	useEffect(() => {
-        const handleScroll = () => {
-            const scrollTop = window.scrollY || document.documentElement.scrollTop;
-            if (scrollTop > 50) {
-				console.log("scroll");
-				
-                setScrolled(true);
-            } else {
-                setScrolled(false);
-            }
-        };
+	const [loading, setLoading] = useState(true);
 
-        window.addEventListener("scroll", handleScroll);
-        return () => {
-            window.removeEventListener("scroll", handleScroll);
-        };
-    }, []);
+	useEffect(() => {
+		const loadImage = async () => {
+		  const image = new Image();
+		  image.src = about_back;
+		  image.onload = () => {
+			setLoading(false);
+		  };
+		};
+	
+		loadImage();
+	
+		const handleScroll = () => {
+		  const scrollTop = window.scrollY || document.documentElement.scrollTop;
+		  if (scrollTop > 20) {
+			console.log("scroll");
+			setScrolled(true);
+		  } else {
+			setScrolled(false);
+		  }
+		};
+	
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+		  window.removeEventListener("scroll", handleScroll);
+		};
+	  }, []);
+	
+	  if (loading) {
+		return (
+		  <div className="loader-container">
+			<div className="loader"></div>
+		  </div>
+		);
+	  }
 
 	return (
 		<>

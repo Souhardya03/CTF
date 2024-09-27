@@ -3,15 +3,17 @@ import Card from './Card.jsx';
 import IMG from "../../assets/images/Kamado.Tanjirou.600.2883168.jpg"
 import Purbayan from "./images/Purbayan.jpg"
 import Kaustav from "./images/Kaustav.jpg"
+import Linkedin from "../../assets/images/Icons/LinkedIn.png"
+
 const people = [
   {
     image: Purbayan,
     name: 'Purbayan Kumar Das',
     role: 'Event Head',
     socialLinks: [
-      { name: 'Twitter', url: 'https://twitter.com', icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid" },
-      { name: 'LinkedIn', url: 'https://linkedin.com', icon: "https://www.vectorico.com/wp-content/uploads/2018/02/LinkedIn-Icon-Square-Dark.png" },
-      {name: 'Github', url: 'https://github.com', icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"}
+      { name: 'Twitter', url: 'https://x.com/purb03ragnarok', icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid" },
+      { name: 'LinkedIn', url: 'https://www.linkedin.com/in/purbayan-kumar-das-350037256?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app', icon: Linkedin },
+      {name: 'Github', url: 'https://github.com/purb03ragnarok', icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"}
     ],
   },
   {
@@ -20,17 +22,17 @@ const people = [
     role: 'Event Head',
     socialLinks: [
       { name: 'Twitter', url: 'https://twitter.com', icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid" },
-      { name: 'LinkedIn', url: 'https://linkedin.com', icon: "https://www.vectorico.com/wp-content/uploads/2018/02/LinkedIn-Icon-Square-Dark.png" },
+      { name: 'LinkedIn', url: 'https://linkedin.com', icon: Linkedin  },
       {name: 'Github', url: 'https://github.com', icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"}
     ],
   },
   {
     image: IMG,
-    name: 'Manjulika',
-    role: 'Kono kaj kore na',
+    name: 'Swagata Mondal',
+    role: 'Social Media Team',
     socialLinks: [
       { name: 'Twitter', url: 'https://twitter.com', icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid" },
-      { name: 'LinkedIn', url: 'https://linkedin.com', icon: "https://www.vectorico.com/wp-content/uploads/2018/02/LinkedIn-Icon-Square-Dark.png" },
+      { name: 'LinkedIn', url: 'https://linkedin.com', icon: Linkedin  },
       {name: 'Github', url: 'https://github.com', icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"}
     ],
   },
@@ -40,7 +42,7 @@ const people = [
     role: 'Frontend Developer',
     socialLinks: [
       { name: 'Twitter', url: 'https://twitter.com', icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid" },
-      { name: 'LinkedIn', url: 'https://linkedin.com', icon: "https://www.vectorico.com/wp-content/uploads/2018/02/LinkedIn-Icon-Square-Dark.png" },
+      { name: 'LinkedIn', url: 'https://linkedin.com', icon: Linkedin  },
       {name: 'Github', url: 'https://github.com', icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"}
     ],
   },
@@ -50,7 +52,7 @@ const people = [
     role: 'Frontend Developer',
     socialLinks: [
       { name: 'Twitter', url: 'https://twitter.com', icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid" },
-      { name: 'LinkedIn', url: 'https://linkedin.com', icon: "https://www.vectorico.com/wp-content/uploads/2018/02/LinkedIn-Icon-Square-Dark.png" },
+      { name: 'LinkedIn', url: 'https://linkedin.com', icon: Linkedin  },
       {name: 'Github', url: 'https://github.com', icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"}
     ],
   },
@@ -60,7 +62,7 @@ const people = [
     role: 'Frontend Developer',
     socialLinks: [
       { name: 'Twitter', url: 'https://twitter.com', icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid" },
-      { name: 'LinkedIn', url: 'https://linkedin.com', icon: "https://www.vectorico.com/wp-content/uploads/2018/02/LinkedIn-Icon-Square-Dark.png" },
+      { name: 'LinkedIn', url: 'https://linkedin.com', icon: Linkedin  },
       {name: 'Github', url: 'https://github.com', icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"}
     ]
   },
@@ -70,7 +72,7 @@ const people = [
     role: 'Frontend Developer',
     socialLinks: [
       { name: 'Twitter', url: 'https://twitter.com', icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid" },
-      { name: 'LinkedIn', url: 'https://linkedin.com', icon: "https://www.vectorico.com/wp-content/uploads/2018/02/LinkedIn-Icon-Square-Dark.png" },
+      { name: 'LinkedIn', url: 'https://linkedin.com', icon: Linkedin  },
       {name: 'Github', url: 'https://github.com', icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"}
     ],
   },
@@ -80,7 +82,7 @@ const people = [
     role: 'Frontend Developer',
     socialLinks: [
       { name: 'Twitter', url: 'https://twitter.com', icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid" },
-      { name: 'LinkedIn', url: 'https://linkedin.com', icon: "https://www.vectorico.com/wp-content/uploads/2018/02/LinkedIn-Icon-Square-Dark.png" },
+      { name: 'LinkedIn', url: 'https://linkedin.com', icon: Linkedin  },
       {name: 'Github', url: 'https://github.com', icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"}
     ],
   }

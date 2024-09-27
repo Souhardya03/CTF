@@ -4,3 +4,6 @@
     background-repeat: no-repeat;
     /* position: fixed; */
 }
+ul li{
+    list-style:decimal;
+}
