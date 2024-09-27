@@ -92,15 +92,7 @@ const Rules = () => {
 								must be registered before the event.
 							</li>
 							<li className=" text-sm lg:text-[18px] font-medium">
-								All team members can submit flags during the competition, but
-								only the team leader can officially join the event.
-							</li>
-							<li className=" text-sm lg:text-[18px] font-medium">
 								Denial of Z3r0D4Y ctf infrastructure is strictly prohibited.
-							</li>
-							<li className=" text-sm lg:text-[18px] font-medium">
-								Finding bugs in the Z3r0D4Y ctf infrastructure can earn your
-								team extra points.
 							</li>
 							<li className=" text-sm lg:text-[18px] font-medium">
 								Finding bugs in the Z3r0D4Y ctf infrastructure can earn your
