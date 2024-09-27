@@ -31,11 +31,11 @@ function App() {
 					key={location.pathname}>
 					<Route
 						path="/"
-						element={<MainWithLoader />}
+						element={<Main />}
 					/>
 					<Route
 						path="/home"
-						element={<HomeWithLoader />}
+						element={<Home />}
 					/>
 					<Route
 						path="/rules"

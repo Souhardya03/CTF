@@ -10,7 +10,7 @@ const WithLoader = (WrappedComponent) => {
         // Add a small delay to ensure smooth transition
         setTimeout(() => {
           setLoading(false);
-        }, 100);
+        }, 1000);
       };
 
       if (document.readyState === 'complete') {
