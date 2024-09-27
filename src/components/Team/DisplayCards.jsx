@@ -21,9 +21,9 @@ const people = [
     name: 'Kaustav Das',
     role: 'Event Head',
     socialLinks: [
-      { name: 'Twitter', url: 'https://twitter.com', icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid" },
-      { name: 'LinkedIn', url: 'https://linkedin.com', icon: Linkedin  },
-      {name: 'Github', url: 'https://github.com', icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"}
+      { name: 'Twitter', url: 'https://x.com/Kaustav25821', icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid" },
+      { name: 'LinkedIn', url: 'https://www.linkedin.com/in/kaustav258', icon: Linkedin  },
+      {name: 'Github', url: 'https://x.com/Kaustav25821', icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png"}
     ],
   },
   {
