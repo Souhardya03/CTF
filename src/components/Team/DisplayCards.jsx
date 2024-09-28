@@ -13,7 +13,7 @@ import Linkedin from "../../assets/images/Icons/LinkedIn.png"
 const people = [
   {
     image: Purbayan,
-    name: 'Purbayan Kumar Das',
+    name: 'Purbayan Kr. Das',
     role: 'Event Head',
     socialLinks: [
       { name: 'Twitter', url: 'https://x.com/purb03ragnarok', icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid" },
