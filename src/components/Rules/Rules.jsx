@@ -50,7 +50,7 @@ const Rules = () => {
 	return (
 		<div className="">
 			<Navbar scrolled={scrolled} />
-			<div className="rules-back lg:min-h-screen flex justify-center w-full">
+			<div className="rules-back lg:min-h-screen md:min-h-screen flex justify-center w-full">
 				{/* Optional: Uncomment if background image is needed */}
 				{/* <img
           src={rulesback}
@@ -68,7 +68,7 @@ const Rules = () => {
 					{/* You can place animated content here */}
 
 					{/* Content Section */}
-					<div className="flex text-white w-full lg:pt-24 pt-20 flex-col justify-center items-center relative">
+					<div className="flex text-white w-full lg:pt-24 md:pt-48 pt-20 flex-col justify-center items-center relative">
 						<div className="MagnificentSerif lg:text-6xl relative flex flex-col text-5xl items-center">
 							<div className=" ">
 								<span className=" text-[#f48619] WitchMagic">RULES</span>

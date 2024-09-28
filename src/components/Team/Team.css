@@ -1,5 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 .team-back{
-    background: url("../../assets/images/challenge-2.gif");
+    background: url("../../assets/images/team-back.jpg");
 	background-size: cover;
-	background-repeat: no-repeat;	
+	background-repeat: no-repeat;
+	background-attachment: fixed;	
+	
+}
+.team_font{
+	font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
 }

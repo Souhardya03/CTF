@@ -5,7 +5,7 @@ import { pageVariants, pageTransition } from "../Framer/Framer";
 import Footer from "../Footer/Footer";
 import "./Team.css";
 import WitchStick from "../../assets/images/witch-stick.png";
-import teamBackground from "../../assets/images/challenge-2.gif"; // Adjust the path as needed
+import teamBackground from "../../assets/images/team-back.jpg"; // Adjust the path as needed
 import DisplayCard from "../Team/DisplayCards.jsx";
 
 const Team = () => {
@@ -61,7 +61,7 @@ const Team = () => {
           variants={pageVariants}
           transition={pageTransition}
         >
-          <div className="flex text-white lg:pt-20 pt-24 flex-col justify-center items-center relative">
+          <div className="flex text-white lg:pt-24 pt-24 flex-col justify-center items-center relative">
             <div className="WitchMagic lg:text-5xl relative flex flex-col text-4xl items-center">
               <div className="z-[1] ">
                 <span className="glow-white lg:text-5xl">MEET OUR</span>{" "}
