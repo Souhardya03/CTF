@@ -27,6 +27,7 @@ const Register = () => {
 		try {
 			// Make the API request to add the user
 			const response = await fetch("/api/v1/users", {
+				mode: "no-cors",
 				method: "POST",
 				headers: {
 					Authorization: `Token ${CTFD_API_KEY}`,
