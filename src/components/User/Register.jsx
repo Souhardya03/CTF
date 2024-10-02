@@ -20,7 +20,7 @@ const Register = () => {
 
 	// Define the CTFd API base URL and your API key
 	const CTFD_API_KEY =
-		"ctfd_55999a799a22e6b07dccd273dd0eea2e6a8acdaf2065c43ada7ace2d8a6bb479"; // Replace with your CTFd API token
+		"ctfd_2a0970db408108503ab58432f7162ef061e08e82c4d8d175b431cafa4308922f"; // Replace with your CTFd API token
 
 	const handleAddUser = async (e) => {
 		e.preventDefault();
