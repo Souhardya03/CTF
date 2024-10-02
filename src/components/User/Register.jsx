@@ -20,14 +20,14 @@ const Register = () => {
 
 	// Define the CTFd API base URL and your API key
 	const CTFD_API_KEY =
-		"ctfd_2a0970db408108503ab58432f7162ef061e08e82c4d8d175b431cafa4308922f"; // Replace with your CTFd API token
+		"ctfd_6a499b8d95198c3b93add4cffb5ff296fe1404eca2cab87b350a7da08cd8d93e"; // Replace with your CTFd API token
 
 	const handleAddUser = async (e) => {
 		e.preventDefault();
 		try {
 			// Make the API request to add the user
-			const response = await fetch("http://20.117.241.255/api/v1/users", {
-				mode: "no-cors",
+			const response = await fetch("/api/v1/users", {
+				// mode: "no-cors",
 				method: "POST",
 				headers: {
 					Authorization: `Token ${CTFD_API_KEY}`,
