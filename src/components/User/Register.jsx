@@ -1,21 +1,227 @@
-import React from "react";
+/* eslint-disable no-unused-vars */
+import React, { useEffect, useState } from "react";
 import "./Register.css";
-import Navbar from "../Navbar/Navbar.jsx"
-import Footer from "../Footer/Footer.jsx"
+import Navbar from "../Navbar/Navbar.jsx";
+import Footer from "../Footer/Footer.jsx";
+import register_back from "../../assets/images/register-back.png";
+import { NavLink, useNavigate } from "react-router-dom";
+import { toast } from "react-toastify";
+
 const Register = () => {
-	return (
-		<>
-		<Navbar/>
-		<div className="register-back flex justify-center items-center h-[100vh]">
-			<div className=" lg:w-1/2 bg-[#212020a5] rounded-md  h-full">
-				<div className="text-3xl trick-or-treats text-orange-400 flex justify-center items-center h-full  font-bold text-center pt-5">
-					Registration will start soon !!!
-				</div>
-				
+	const [scrolled, setScrolled] = useState(false);
+	const navigate = useNavigate();
+	const [userdata, setUserdata] = useState({
+		fullname: "",
+		name: "",
+		email: "",
+		password: "",
+	});
+	const [message, setMessage] = useState("");
+
+	// Define the CTFd API base URL and your API key
+	const CTFD_API_KEY =
+		"ctfd_55999a799a22e6b07dccd273dd0eea2e6a8acdaf2065c43ada7ace2d8a6bb479"; // Replace with your CTFd API token
+
+	const handleAddUser = async (e) => {
+		e.preventDefault();
+		try {
+			// Make the API request to add the user
+			const response = await fetch("/api/v1/users", {
+				method: "POST",
+				headers: {
+					Authorization: `Token ${CTFD_API_KEY}`,
+					"Content-Type": "application/json",
+				},
+				body: JSON.stringify({
+					name: userdata.name,
+					email: userdata.email,
+					password: userdata.password,
+					type: "user",
+				}),
+			});
+
+			if (response.ok) {
+				toast.success("Registered Successfully!");
+				handlegoogleSubmit();
+				// navigate("http://20.117.241.255/login")
+				window.location.replace("http://20.117.241.255/login");
+			} else  {
+				toast.error("User already exists");
+			}
+		} catch (error) {
+			console.error("Error adding user:", error);
+			setMessage("Error adding user.");
+		}
+	};
+
+	const handlegoogleSubmit = async (e) => {
+		fetch("https://sheetdb.io/api/v1/nba7v3ecmxfyc", {
+			method: "POST",
+			headers: {
+				Accept: "application/json",
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({
+				data: [
+					{
+						fullname: userdata.fullname,
+						username: userdata.name,
+						email: userdata.email,
+					},
+				],
+			}),
+		})
+			.then((response) => response.json())
+			.then((data) => console.log(data));
+	};
+
+	const [loading, setLoading] = useState(true);
+
+	useEffect(() => {
+		const loadImage = async () => {
+			const image = new Image();
+			image.src = register_back;
+			image.onload = () => {
+				setLoading(false);
+			};
+		};
+
+		loadImage();
+		const handleScroll = () => {
+			const scrollTop = window.scrollY || document.documentElement.scrollTop;
+			if (scrollTop > 20) {
+				console.log("scroll");
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
+	if (loading) {
+		return (
+			<div className="loader-container">
+				<div className="loader"></div>
 			</div>
+		);
+	}
+	const handlechange = (e) => {
+		setUserdata({ ...userdata, [e.target.name]: e.target.value });
+	};
+
+	return (
+		<div className="register-back">
+			<Navbar scrolled={scrolled} />
+			<div className="wrapper">
+				<div className="login_box mt-20 mb-8 ">
+					<div className="login-header WitchMagic text-xs">
+						<span>Register</span>
+					</div>
+
+					<div className="input_box">
+						<input
+							type="text"
+							id="fullname"
+							name="fullname"
+							value={userdata.fullname}
+							onChange={handlechange}
+							className="input-field"
+							required
+							placeholder=""
+						/>
+						<label
+							htmlFor="fullname"
+							className="label">
+							Name
+						</label>
+						<i className="bx bx-user icon"></i>
+					</div>
+
+					<div className="input_box">
+						<input
+							type="text"
+							id="name"
+							name="name"
+							value={userdata.name}
+							onChange={handlechange}
+							className="input-field"
+							required
+							placeholder=""
+						/>
+						<label
+							htmlFor="name"
+							className="label">
+							Username
+						</label>
+						<i className="bx bx-user icon"></i>
+					</div>
+
+					<div className="input_box">
+						<input
+							type="email"
+							id="email"
+							name="email"
+							value={userdata.email}
+							onChange={handlechange}
+							className="input-field"
+							required
+							placeholder=""
+						/>
+						<label
+							htmlFor="email"
+							className="label">
+							Email
+						</label>
+						<i className="bx bx-user icon"></i>
+					</div>
+
+					<div className="input_box">
+						<input
+							type="password"
+							id="password"
+							name="password"
+							value={userdata.password}
+							onChange={handlechange}
+							className="input-field"
+							required
+							placeholder=""
+						/>
+						<label
+							htmlFor="password"
+							className="label">
+							Password
+						</label>
+						<i className="bx bx-lock-alt icon"></i>
+					</div>
+
+					<div className="input_box">
+						<input
+							type="submit"
+							className="input-submit"
+							value="Submit"
+							onClick={handleAddUser}
+						/>
+					</div>
+					<div className="text-center">
+						Already registered, Let's start{" "}
+						<span className=" font-medium WitchMagic cursor-pointer">
+							<NavLink
+								className="text-orange-500 underline"
+								target="_blank"
+								to="http://20.117.241.255/login">
+								Hacking
+							</NavLink>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<Footer />
 		</div>
-		<Footer/>
-		</>
 	);
 };
 

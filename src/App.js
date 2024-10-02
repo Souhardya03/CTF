@@ -14,7 +14,6 @@ import Register from "./components/User/Register.jsx";
 
 function App() {
   const ContactWithLoader = WithLoader(Contact);
-  const RegisterWithLoader = WithLoader(Register);
   const location = useLocation();
   
  
@@ -30,7 +29,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<ContactWithLoader />} />
-          <Route path="/register" element={<RegisterWithLoader />} />
+          <Route path="/register" element={<Register />} />
         </Routes>
       </AnimatePresence>
     </>

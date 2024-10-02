@@ -87,6 +87,7 @@ const Rules = () => {
 								registration, join an existing team, or request an invite link
 								from a team leader.
 							</li>
+							<li>To do registration use <span className="text-orange-500 font-medium">Register</span> button on navbar. By using those credentials do login to the redirected website after registration.</li>
 							<li className=" text-sm lg:text-[18px] font-medium">
 								Teams can have up to 5 members (including the Team Leader) and
 								must be registered before the event.
