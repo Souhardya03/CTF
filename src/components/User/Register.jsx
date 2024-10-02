@@ -26,7 +26,7 @@ const Register = () => {
 		e.preventDefault();
 		try {
 			// Make the API request to add the user
-			const response = await fetch("/api/v1/users", {
+			const response = await fetch("http://20.117.241.255/api/v1/users", {
 				mode: "no-cors",
 				method: "POST",
 				headers: {
