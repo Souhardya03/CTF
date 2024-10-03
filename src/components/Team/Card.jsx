@@ -3,7 +3,7 @@ import "../../App.css";
 
 const Card = ({ image, name, role, socialLinks, department }) => (
 	<div className="relative group w-[48%] md:w-[30%] lg:w-[20%] ">
-		<div className="border border-[#5f5d5d] bg-[#2423239a]  w-full transition-all duration-300 ease-out  lg:p-6 p-2 rounded-lg shadow-lg flex flex-col justify-center items-center  transform group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-white">
+		<div className="border border-[#5f5d5d] bg-[#242323e6]  w-full transition-all duration-300 ease-out  lg:p-6 p-2 rounded-lg shadow-lg flex flex-col justify-center items-center  transform group-hover:scale-105 group-hover:shadow-2xl group-hover:shadow-white">
 			<div className="lg:h-[30vh] lg:w-[30vh] w-full lg:rounded-full rounded-md h-[24vh] overflow-hidden">
 				<img
 					src={image}

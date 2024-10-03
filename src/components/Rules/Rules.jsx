@@ -93,6 +93,9 @@ const Rules = () => {
 								must be registered before the event.
 							</li>
 							<li className=" text-sm lg:text-[18px] font-medium">
+								Registration will be closed once the CTF event begins.
+							</li>
+							<li className=" text-sm lg:text-[18px] font-medium">
 								Denial of Z3R0D4Y CTF infrastructure is strictly prohibited.
 							</li>
 							<li className=" text-sm lg:text-[18px] font-medium">
