@@ -56,7 +56,7 @@ const people = [
 			},
 			{
 				name: "Github",
-				url: "https://x.com/Kaustav25821",
+				url: "https://github.com/kaustav258",
 				icon: github,
 			},
 		],
