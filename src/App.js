@@ -10,7 +10,8 @@ import PixieDust from "./components/PixieDust/PixieDust.jsx";
 import About from "./components/About/About.jsx";
 import Team from "./components/Team/Team.jsx";
 import Contact from "./components/Contact/Contact.jsx";
-import Register from "./components/User/Register.jsx";
+// import Register from "./components/User/Register.jsx";
+import Pagenotfound from "./components/404/Pagenotfound.jsx";
 
 function App() {
   const ContactWithLoader = WithLoader(Contact);
@@ -29,7 +30,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<ContactWithLoader />} />
-          
+          <Route path="*" element={<Pagenotfound/>}/>
         </Routes>
       </AnimatePresence>
     </>

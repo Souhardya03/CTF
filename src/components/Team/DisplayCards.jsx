@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card.jsx";
-import IMG from "../../assets/images/Kamado.Tanjirou.600.2883168.jpg";
+// import IMG from "../../assets/images/Kamado.Tanjirou.600.2883168.jpg";
 import Purbayan from "./images/Purbayan.jpg";
 import Kaustav from "./images/Kaustav.jpg";
 import Swagata from "./images/Swagata.jpg";
@@ -12,7 +12,7 @@ import Sandyda from "./images/Sandyda.jpg";
 import Linkedin from "./images/linkedin.png";
 import github from "./images/github.png";
 import twitter from "./images/twitter.png";
-
+import Pankajda from "./images/Pankajda.jpg"
 const people = [
 	{
 		image: Purbayan,
@@ -62,7 +62,7 @@ const people = [
 		],
 	},
 	{
-		image: IMG,
+		image: Pankajda,
 		name: "Pankaj Barman",
 		role: "Challenge Creator",
 		department: "CSE'25, JGEC",
@@ -74,12 +74,12 @@ const people = [
 			},
 			{
 				name: "LinkedIn",
-				url: "",
+				url: "https://www.linkedin.com/in/pankaj-barman-737b97224?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
 				icon: Linkedin,
 			},
 			{
 				name: "Github",
-				url: "",
+				url: "https://github.com/Pankaj0038",
 				icon: github,
 			},
 		],
@@ -126,7 +126,7 @@ const people = [
 			{
 				name: "Github",
 				url: "https://github.com/sandy3002",
-				icon: github
+				icon: github,
 			},
 		],
 	},
@@ -136,7 +136,11 @@ const people = [
 		role: "Social Media Team",
 		department: "ECE'26, JGEC",
 		socialLinks: [
-			// { name: 'Twitter', url: 'https://twitter.com', icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid" },
+			{
+				name: "Twitter",
+				url: "https://x.com/mondal_swag26",
+				icon: twitter,
+			},
 			{
 				name: "LinkedIn",
 				url: "https://www.linkedin.com/in/swagata-mondal-809968255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
@@ -145,7 +149,7 @@ const people = [
 			{
 				name: "Github",
 				url: "https://github.com/p4n7h3r-driod",
-				icon: github
+				icon: github,
 			},
 		],
 	},
@@ -159,7 +163,7 @@ const people = [
 			{
 				name: "Twitter",
 				url: "https://x.com/sohamahmed_01",
-				icon: twitter
+				icon: twitter,
 			},
 			{
 				name: "LinkedIn",
@@ -169,7 +173,7 @@ const people = [
 			{
 				name: "Github",
 				url: "https://github.com/sohamahmed01",
-				icon: github
+				icon: github,
 			},
 		],
 	},
@@ -182,7 +186,7 @@ const people = [
 			{
 				name: "Twitter",
 				url: "https://x.com/sigmafemale1602",
-				icon: twitter
+				icon: twitter,
 			},
 			{
 				name: "LinkedIn",
@@ -205,7 +209,7 @@ const people = [
 			{
 				name: "Twitter",
 				url: "https://x.com/DarkWarrio28389",
-				icon: twitter
+				icon: twitter,
 			},
 			{
 				name: "LinkedIn",
@@ -215,7 +219,7 @@ const people = [
 			{
 				name: "Github",
 				url: "https://github.com/Souhardya03",
-				icon: github
+				icon: github,
 			},
 		],
 	},
