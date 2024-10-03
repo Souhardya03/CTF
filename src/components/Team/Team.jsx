@@ -62,15 +62,15 @@ const Team = () => {
           transition={pageTransition}
         >
           <div className="flex text-white lg:pt-24 pt-24 flex-col justify-center items-center relative">
-            <div className="WitchMagic lg:text-5xl relative flex flex-col text-4xl items-center">
-              <div className="z-[1] ">
+            <div className="WitchMagic  lg:text-5xl relative flex flex-col text-4xl items-center">
+              <div className="z-[1] animate-down">
                 <span className="glow-white lg:text-5xl">MEET OUR</span>{" "}
                 <span className=" text-red-500">TEAM</span>
               </div>
               <div className="w-full">
                 <img
                   src={WitchStick}
-                  className="absolute glow-effect left-[3rem] w-[80%] -top-[4.6rem] lg:-top-[6.2rem] rotate-[215deg]"
+                  className="absolute glow-effect animate-scale left-[3rem] w-[80%] -top-[4.6rem] lg:-top-[6.2rem] rotate-[215deg]"
                   alt=""
                 />
               </div>

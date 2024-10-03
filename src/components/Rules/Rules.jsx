@@ -70,18 +70,18 @@ const Rules = () => {
 					{/* Content Section */}
 					<div className="flex text-white w-full lg:pt-24 md:pt-48 pt-20 flex-col justify-center items-center relative">
 						<div className="MagnificentSerif lg:text-6xl relative flex flex-col text-5xl items-center">
-							<div className=" ">
+							<div className="animate-down ">
 								<span className=" text-[#f48619] WitchMagic">RULES</span>
 							</div>
 							<div className="w-full">
 								<img
 									src={rules_stick}
-									className="absolute glow-effect left-[1rem] w-[60%] -top-[3.9rem] lg:-top-[4.8rem] rotate-[255deg]"
+									className="absolute animate-scale glow-effect left-[1rem] w-[60%] -top-[3.9rem] lg:-top-[4.8rem] rotate-[255deg]"
 									alt=""
 								/>
 							</div>
 						</div>
-						<ul className="text-white w-[90%] lg:w-[60%] flex-col gap-8 trick-or-treats rounded-md bg-[#3e3c3c89] flex  my-8 pl-10 px-8 p-4  ">
+						<ul className="text-white w-[90%] animate-up lg:w-[60%] flex-col gap-8 trick-or-treats rounded-md bg-[#3e3c3c89] flex  my-8 pl-10 px-8 p-4  ">
 							<li className="text-sm lg:text-[18px] font-medium">
 								This is a team-only event. You must either create a team during
 								registration, join an existing team, or request an invite link
