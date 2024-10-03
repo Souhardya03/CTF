@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./Card.jsx";
-import IMG from "../../assets/images/Kamado.Tanjirou.600.2883168.jpg"
+import IMG from "../../assets/images/Kamado.Tanjirou.600.2883168.jpg";
 import Purbayan from "./images/Purbayan.jpg";
 import Kaustav from "./images/Kaustav.jpg";
 import Swagata from "./images/Swagata.jpg";
@@ -8,8 +8,10 @@ import Adil from "./images/Adil.jpg";
 import Soham from "./images/Soham.jpg";
 import Anjali from "./images/Anjali.jpg";
 import Souhardya from "./images/Souhardya.jpg";
-import Sandyda from "./images/Sandyda.jpg"
-import Linkedin from "../../assets/images/Icons/LinkedIn.png";
+import Sandyda from "./images/Sandyda.jpg";
+import Linkedin from "./images/linkedin.png";
+import github from "./images/github.png";
+import twitter from "./images/twitter.png";
 
 const people = [
 	{
@@ -21,7 +23,8 @@ const people = [
 			{
 				name: "Twitter",
 				url: "https://x.com/purb03ragnarok",
-				icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid",
+				icon: twitter,
+				// icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid",
 			},
 			{
 				name: "LinkedIn",
@@ -31,7 +34,7 @@ const people = [
 			{
 				name: "Github",
 				url: "https://github.com/purb03ragnarok",
-				icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png",
+				icon: github,
 			},
 		],
 	},
@@ -44,7 +47,7 @@ const people = [
 			{
 				name: "Twitter",
 				url: "https://x.com/Kaustav25821",
-				icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid",
+				icon: twitter,
 			},
 			{
 				name: "LinkedIn",
@@ -54,7 +57,7 @@ const people = [
 			{
 				name: "Github",
 				url: "https://x.com/Kaustav25821",
-				icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png",
+				icon: github,
 			},
 		],
 	},
@@ -67,7 +70,7 @@ const people = [
 			{
 				name: "Twitter",
 				url: "",
-				icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid",
+				icon: twitter,
 			},
 			{
 				name: "LinkedIn",
@@ -77,7 +80,7 @@ const people = [
 			{
 				name: "Github",
 				url: "",
-				icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png",
+				icon: github,
 			},
 		],
 	},
@@ -90,7 +93,7 @@ const people = [
 			{
 				name: "Twitter",
 				url: "https://x.com/adilhossainsana",
-				icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid",
+				icon: twitter,
 			},
 			{
 				name: "LinkedIn",
@@ -100,11 +103,11 @@ const people = [
 			{
 				name: "Github",
 				url: "https://github.com/SpiderSec101",
-				icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png",
+				icon: github,
 			},
 		],
 	},
-  {
+	{
 		image: Sandyda,
 		name: "Sandipan Chatterjee",
 		role: "Server Management",
@@ -113,7 +116,7 @@ const people = [
 			{
 				name: "Twitter",
 				url: "https://Twitter.com/sandipan2003",
-				icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid",
+				icon: twitter,
 			},
 			{
 				name: "LinkedIn",
@@ -123,7 +126,7 @@ const people = [
 			{
 				name: "Github",
 				url: "https://github.com/sandy3002",
-				icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png",
+				icon: github
 			},
 		],
 	},
@@ -142,7 +145,7 @@ const people = [
 			{
 				name: "Github",
 				url: "https://github.com/p4n7h3r-driod",
-				icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png",
+				icon: github
 			},
 		],
 	},
@@ -156,7 +159,7 @@ const people = [
 			{
 				name: "Twitter",
 				url: "https://x.com/sohamahmed_01",
-				icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid",
+				icon: twitter
 			},
 			{
 				name: "LinkedIn",
@@ -166,7 +169,7 @@ const people = [
 			{
 				name: "Github",
 				url: "https://github.com/sohamahmed01",
-				icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png",
+				icon: github
 			},
 		],
 	},
@@ -179,7 +182,7 @@ const people = [
 			{
 				name: "Twitter",
 				url: "https://x.com/sigmafemale1602",
-				icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid",
+				icon: twitter
 			},
 			{
 				name: "LinkedIn",
@@ -189,7 +192,7 @@ const people = [
 			{
 				name: "Github",
 				url: "https://github.com/kookie3478",
-				icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png",
+				icon: github,
 			},
 		],
 	},
@@ -202,7 +205,7 @@ const people = [
 			{
 				name: "Twitter",
 				url: "https://x.com/DarkWarrio28389",
-				icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid",
+				icon: twitter
 			},
 			{
 				name: "LinkedIn",
@@ -212,7 +215,7 @@ const people = [
 			{
 				name: "Github",
 				url: "https://github.com/Souhardya03",
-				icon: "https://cdn.pixabay.com/photo/2022/01/30/13/33/github-6980894_960_720.png",
+				icon: github
 			},
 		],
 	},

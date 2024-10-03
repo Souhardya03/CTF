@@ -17,20 +17,21 @@ const Card = ({ image, name, role, socialLinks, department }) => (
 			<div className="text-white lg:text-sm text-xs font-medium  text-center">
 				{role}
 			</div>
-			<div className="text-gray-400 lg:text-sm text-xs mt-2 text-center">
+			<div className="text-gray-400 font-medium  lg:text-sm text-xs mt-2 text-center">
 				{department}
 			</div>
-			<div className="social-links flex justify-center mb-4 mt-4 ">
+			<div className="social-links   flex justify-center mb-4 mt-4 ">
 				{socialLinks.map((link, index) => (
 					<a
 						key={index}
 						href={link.url}
 						target="_blank"
+						className="hover:scale-110 lg:w-[35px] lg:h-[35px] duration-200 "
 						rel="noopener noreferrer">
 						<img
 							src={link.icon}
 							alt={`${link.name} icon`}
-							className="w-full"
+							className="w-full glow-effect"
 						/>
 					</a>
 				))}
