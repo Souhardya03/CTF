@@ -24,35 +24,43 @@ const Register = () => {
 
 	const handleAddUser = async (e) => {
 		e.preventDefault();
-		try {
-			// Make the API request to add the user
-			const response = await fetch("/api/v1/users", {
-				// mode: "no-cors",
-				method: "POST",
-				headers: {
-					Authorization: `Token ${CTFD_API_KEY}`,
-					"Content-Type": "application/json",
-				},
-				body: JSON.stringify({
-					name: userdata.name,
-					email: userdata.email,
-					password: userdata.password,
-					type: "user",
-				}),
-			});
+		if (
+			userdata.fullname === "" ||
+			userdata.name === "" ||
+			userdata.email === "" ||
+			userdata.password === ""
+		) {
+			toast.error("Please fill all the fields");
+		} else
+			try {
+				// Make the API request to add the user
+				const response = await fetch("http://20.117.241.255/api/v1/users", {
+					mode:"no-cors",
+					method: "POST",
+					headers: {
+						Authorization: `Token ${CTFD_API_KEY}`,
+						"Content-Type": "application/json",
+					},
+					body: JSON.stringify({
+						name: userdata.name,
+						email: userdata.email,
+						password: userdata.password,
+						type: "user",
+					}),
+				});
 
-			if (response.ok) {
-				toast.success("Registered Successfully!");
-				handlegoogleSubmit();
-				// navigate("http://20.117.241.255/login")
-				window.location.replace("http://20.117.241.255/login");
-			} else  {
-				toast.error("User already exists");
+				if (response.status === 200) {
+					toast.success("Registered Successfully!");
+					handlegoogleSubmit();
+					// navigate("http://20.117.241.255/login")
+					window.location.replace("http://20.117.241.255/login");
+				} else {
+					toast.error("User already exists");
+				}
+			} catch (error) {
+				console.error("Error adding user:", error);
+				setMessage("Error adding user.");
 			}
-		} catch (error) {
-			console.error("Error adding user:", error);
-			setMessage("Error adding user.");
-		}
 	};
 
 	const handlegoogleSubmit = async (e) => {
@@ -117,7 +125,9 @@ const Register = () => {
 	return (
 		<div className="register-back">
 			<Navbar scrolled={scrolled} />
-			<div className="wrapper">
+			<form
+				onSubmit={handleAddUser}
+				className="wrapper">
 				<div className="login_box mt-20 mb-8 ">
 					<div className="login-header WitchMagic text-xs">
 						<span>Register</span>
@@ -131,7 +141,7 @@ const Register = () => {
 							value={userdata.fullname}
 							onChange={handlechange}
 							className="input-field"
-							required
+							required={true}
 							placeholder=""
 						/>
 						<label
@@ -219,7 +229,7 @@ const Register = () => {
 						</span>
 					</div>
 				</div>
-			</div>
+			</form>
 
 			<Footer />
 		</div>

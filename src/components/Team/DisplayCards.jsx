@@ -8,6 +8,7 @@ import Adil from "./images/Adil.jpg";
 import Soham from "./images/Soham.jpg";
 import Anjali from "./images/Anjali.jpg";
 import Souhardya from "./images/Souhardya.jpg";
+import Sandyda from "./images/Sandyda.jpg"
 import Linkedin from "../../assets/images/Icons/LinkedIn.png";
 
 const people = [
@@ -60,7 +61,7 @@ const people = [
 	{
 		image: IMG,
 		name: "Pankaj Barman",
-		role: "Challenge creator",
+		role: "Challenge Creator",
 		department: "CSE'25, JGEC",
 		socialLinks: [
 			{
@@ -83,7 +84,7 @@ const people = [
 	{
 		image: Adil,
 		name: "Adil Hossain Sana",
-		role: "Challenge creator",
+		role: "Challenge Creator",
 		department: "ME'26, JGEC",
 		socialLinks: [
 			{
@@ -104,14 +105,14 @@ const people = [
 		],
 	},
   {
-		image: IMG,
+		image: Sandyda,
 		name: "Sandipan Chatterjee",
 		role: "Server Management",
 		department: "CSE'25, JGEC",
 		socialLinks: [
 			{
 				name: "Twitter",
-				url: "",
+				url: "https://Twitter.com/sandipan2003",
 				icon: "https://img.freepik.com/free-vector/new-2023-twitter-logo-x-icon-design_1017-45418.jpg?size=338&ext=jpg&ga=GA1.1.2008272138.1724371200&semt=ais_hybrid",
 			},
 			{
