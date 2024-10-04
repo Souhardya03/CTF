@@ -29,7 +29,7 @@ const Home = () => {
           <div className="loader"></div>
         </div>
       ) : (
-        <div className="home-back lg:h-full h-[95vh]  overflow-x-hidden w-full" style={{backgroundImage: "../../assets/images/home-background.jpg"}}>
+        <div className="home-back lg:max-h-screen h-[95vh]  overflow-x-hidden w-full" style={{backgroundImage: "../../assets/images/home-background.jpg"}}>
           <Navbar />
           <motion.div
             exit="out"

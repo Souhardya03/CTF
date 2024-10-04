@@ -109,7 +109,7 @@ What We Do:
 
 	return (
 		<>
-			<div className="about-back overflow-x-hidden lg:h-full md:h-[95vh] w-full">
+			<div className="about-back overflow-x-hidden lg:min-h-screen md:h-[95vh] w-full">
 				<Navbar scrolled={scrolled}/>
 				<motion.div
 					exit="out"
