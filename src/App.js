@@ -12,6 +12,7 @@ import Team from "./components/Team/Team.jsx";
 import Contact from "./components/Contact/Contact.jsx";
 // import Register from "./components/User/Register.jsx";
 import Pagenotfound from "./components/404/Pagenotfound.jsx";
+import Register from "./components/User/Register.jsx";
 
 function App() {
   const ContactWithLoader = WithLoader(Contact);
@@ -30,6 +31,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/team" element={<Team />} />
           <Route path="/contact" element={<ContactWithLoader />} />
+          <Route path="/register" element={<Register />} />
           <Route path="*" element={<Pagenotfound/>}/>
         </Routes>
       </AnimatePresence>

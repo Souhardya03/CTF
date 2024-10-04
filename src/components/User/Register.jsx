@@ -34,8 +34,8 @@ const Register = () => {
 		} else
 			try {
 				// Make the API request to add the user
-				const response = await fetch("http://20.117.241.255/api/v1/users", {
-					mode:"no-cors",
+				const response = await fetch("/api/v1/users", {
+					// mode:"no-cors",
 					method: "POST",
 					headers: {
 						Authorization: `Token ${CTFD_API_KEY}`,
@@ -53,7 +53,7 @@ const Register = () => {
 					toast.success("Registered Successfully!");
 					handlegoogleSubmit();
 					// navigate("http://20.117.241.255/login")
-					window.location.replace("http://20.117.241.255/login");
+					window.location.replace("https://ctf.zerologon.co.in/login");
 				} else {
 					toast.error("User already exists");
 				}
