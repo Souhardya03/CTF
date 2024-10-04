@@ -9,7 +9,7 @@ import CopyrightIcon from "@mui/icons-material/Copyright";
 const Footer = () => {
 	return (
 		<>
-			<div className="bg-[#0e0e0eea] z-[999] h-full  w-full">
+			<div className="bg-[] z-[999] h-full  w-full">
 				<div
 					className="p-4 flex justify-between items-center 
 				 text-white WitchMagic">
