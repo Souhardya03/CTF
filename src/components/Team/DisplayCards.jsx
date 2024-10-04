@@ -226,7 +226,7 @@ const people = [
 ];
 
 const CardList = () => (
-	<div className=" flex flex-wrap lg:px-6 justify-center  w-full gap-2 lg:gap-8 mt-14 grid-cols-2">
+	<div className=" flex flex-wrap justify-center   w-full gap-2 lg:gap-6 mt-14 grid-cols-2">
 		{people.map((person, index) => (
 			<Card
 				key={index}

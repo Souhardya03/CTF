@@ -38,14 +38,14 @@ const Home = () => {
             variants={pageVariants}
             transition={pageTransition}>
             <div className={`relative z-10 transition-opacity duration-500`}>
-              <div className="text-white lg:h-[91.7vh] flex justify-center pt-24 items-center flex-col p-6 lg:p-14">
-                <div className="lg:w-[60%] md:w-[70%] lg:mt-14">
-                  <div className="lg:text-5xl md:text-5xl text-4xl fade-out text-center WitchMagic">
+              <div className="text-white lg:h-[91.7vh] flex justify-center  items-center flex-col p-6 ">
+                <div className="lg:w-[60%] md:w-[70%] lg:pt-24">
+                  <div className="lg:text-5xl  md:text-5xl text-4xl fade-out text-center WitchMagic">
                     <span className="text-glow">WELCOME TO </span>
                     <span className="text-orange-500 lg:text-6xl MagnificentSerif">
                       Z3R0D4Y
                     </span>{" "}
-                    <span className="text-glow">CTF !</span>
+                    <span className="text-glow">CTF!</span>
                   </div>
                   <div className="text-center move-up text-[0.89rem] lg:text-lg md:text-lg trick-or-treats mt-8">
                     October marks Cybersecurity Awareness Month, an important time

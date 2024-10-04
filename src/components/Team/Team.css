@@ -10,3 +10,10 @@
 	font-family: "Josefin Sans", sans-serif;
   font-optical-sizing: auto;
 }
+
+@media (min-width: 1026px ) and (max-width: 1260px) {
+	/* Styles for devices up to 1058px */
+	.team-card{
+		width: 30%;
+	}
+  }
