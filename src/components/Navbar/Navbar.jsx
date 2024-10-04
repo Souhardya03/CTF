@@ -61,7 +61,7 @@ const Navbar = ({ scrolled }) => {
 			</div>
 			<div className="flex gap-2">
 				<NavLink
-					to="http://20.117.241.255/register"
+					to="https://ctf.zerologon.co.in"
 					target="_blank"
 					className="border-2 flex justify-center scary-halloween rounded-full items-center p-2 lg:px-4 text-sm lg:text-lg border-orange-500">
 					<div className="text-orange-500">Register</div>
