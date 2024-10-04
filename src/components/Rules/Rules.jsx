@@ -58,7 +58,7 @@ const Rules = () => {
 					variants={pageVariants}
 					transition={pageTransition}>
 					
-					<div className="flex text-white w-full lg:pt-24 md:pt-48  pt-20 flex-col justify-center items-center relative">
+					<div className="flex text-white w-full lg:pt-24 md:pt-32  pt-20 flex-col justify-center items-center relative">
 						<div className="MagnificentSerif lg:text-6xl relative flex flex-col text-5xl items-center">
 							<div className="animate-down ">
 								<span className=" text-[#f48619] WitchMagic">RULES</span>

@@ -32,7 +32,7 @@ const Home = () => {
 				<>
 					<Navbar />
 					<div
-						className="home-back home  h-[100vh] pt-[4rem] lg:pt-0   overflow-x-hidden w-full"
+						className="home-back home  h-[100vh] pt-[4rem] md:pt-40 lg:pt-0   overflow-x-hidden w-full"
 						style={{
 							backgroundImage: "../../assets/images/home-background.jpg",backgroundAttachment:"fixed"
 						}}>

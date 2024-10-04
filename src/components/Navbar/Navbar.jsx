@@ -22,9 +22,9 @@ const Navbar = ({ scrolled }) => {
 				</div>
 			</div>
 			<div
-				className={`flex lg:flex-row lg:relative absolute duration-200 justify-center lg:bg-transparent flex-col top-[4rem] lg:h-full h-[25vh] rounded-md ${
-					openNav ? "opacity-100" : " opacity-0 pointer-events-none"
-				} lg:opacity-100 lg:pointer-events-auto opacity-0 right-2 lg:top-0  text-center bg-[#141313ec] text-white scary-halloween gap-2 w-2/3 lg:p-0 p-4 lg:w-1/2  lg:gap-8`}>
+				className={`flex lg:flex-row lg:relative absolute duration-200 justify-center lg:bg-transparent flex-col top-[4rem] lg:h-full h-[20vh] rounded-md ${
+					openNav ? "opacity-100 border-2 border-orange-500" : " opacity-0 pointer-events-none"
+				} lg:opacity-100 lg:pointer-events-auto opacity-0 right-2 lg:top-0  text-center bg-[#141313ec] text-white scary-halloween gap-2 w-[40%] md:w-[20%] lg:p-0 p-4 lg:w-1/2  lg:gap-8`}>
 				<NavLink
 					to="/home"
 					className="hover:text-orange-500 duration-150 hover:scale-105"
