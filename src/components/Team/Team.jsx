@@ -49,11 +49,11 @@ const Team = () => {
 
   return (
     <>
+        <Navbar scrolled={scrolled} />
       <div 
         className="overflow-x-hidden team-back lg:h-full h-full md:h-[95vh] w-full"
         
       >
-        <Navbar scrolled={scrolled} />
         <motion.div
           exit="out"
           animate="in"
@@ -76,7 +76,7 @@ const Team = () => {
               </div>
             </div>
           </div>
-          <div className="w-full px-2 mb-4">
+          <div className="w-full px-2 pb-24">
             <DisplayCard />
           </div>
         </motion.div>

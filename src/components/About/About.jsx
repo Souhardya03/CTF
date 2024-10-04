@@ -5,9 +5,8 @@ import { pageVariants, pageTransition } from "../Framer/Framer";
 import "./About.css";
 import AboutHat from "../../assets/images/about-hat.png";
 import Footer from "../Footer/Footer";
-import about_back from "../../assets/images/about-back.jpg"
+import about_back from "../../assets/images/about-back.jpg";
 const About = () => {
-
 	const fullText = `Welcome to zero_logon,
 The cyber security club of JGEC.
 At our club, we are passionate about learning how to protect digital landscapes and aware everyone to ensure online safety for everyone. Whether you're a intermediate cybersecurity learner or just starting your journey into the world of cyber defense, you'll find a community of like-minded individuals eager to learn, share, and grow together.
@@ -74,43 +73,43 @@ What We Do:
 
 	useEffect(() => {
 		const loadImage = async () => {
-		  const image = new Image();
-		  image.src = about_back;
-		  image.onload = () => {
-			setLoading(false);
-		  };
+			const image = new Image();
+			image.src = about_back;
+			image.onload = () => {
+				setLoading(false);
+			};
 		};
-	
+
 		loadImage();
-	
+
 		const handleScroll = () => {
-		  const scrollTop = window.scrollY || document.documentElement.scrollTop;
-		  if (scrollTop > 20) {
-			console.log("scroll");
-			setScrolled(true);
-		  } else {
-			setScrolled(false);
-		  }
+			const scrollTop = window.scrollY || document.documentElement.scrollTop;
+			if (scrollTop > 20) {
+				console.log("scroll");
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
 		};
-	
+
 		window.addEventListener("scroll", handleScroll);
 		return () => {
-		  window.removeEventListener("scroll", handleScroll);
+			window.removeEventListener("scroll", handleScroll);
 		};
-	  }, []);
-	
-	  if (loading) {
+	}, []);
+
+	if (loading) {
 		return (
-		  <div className="loader-container">
-			<div className="loader"></div>
-		  </div>
+			<div className="loader-container">
+				<div className="loader"></div>
+			</div>
 		);
-	  }
+	}
 
 	return (
 		<>
-			<div className="about-back overflow-x-hidden lg:min-h-screen md:h-[95vh] w-full">
-				<Navbar scrolled={scrolled}/>
+			<Navbar scrolled={scrolled} />
+			<div className="about-back overflow-x-hidden lg:min-h-screen pb-10 lg:pt-4  w-full">
 				<motion.div
 					exit="out"
 					animate="in"
@@ -174,7 +173,7 @@ What We Do:
 					</div>
 				</motion.div>
 			</div>
-				<Footer />
+			<Footer />
 		</>
 	);
 };

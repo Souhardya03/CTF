@@ -50,25 +50,15 @@ const Rules = () => {
 	return (
 		<div className="">
 			<Navbar scrolled={scrolled} />
-			<div className="rules-back lg:min-h-screen md:min-h-screen flex justify-center w-full">
-				{/* Optional: Uncomment if background image is needed */}
-				{/* <img
-          src={rulesback}
-          alt="Background"
-          className={`absolute top-0 left-0 w-full object-cover transition-opacity duration-500`}
-        /> */}
-
-				{/* Animation wrapper */}
+			<div className="rules-back  lg:min-h-screen md:min-h-screen pb-14 flex justify-center w-full">
 				<motion.div
 					exit="out"
 					animate="in"
 					initial="init"
 					variants={pageVariants}
 					transition={pageTransition}>
-					{/* You can place animated content here */}
-
-					{/* Content Section */}
-					<div className="flex text-white w-full lg:pt-24 md:pt-48 pt-20 flex-col justify-center items-center relative">
+					
+					<div className="flex text-white w-full lg:pt-24 md:pt-48  pt-20 flex-col justify-center items-center relative">
 						<div className="MagnificentSerif lg:text-6xl relative flex flex-col text-5xl items-center">
 							<div className="animate-down ">
 								<span className=" text-[#f48619] WitchMagic">RULES</span>

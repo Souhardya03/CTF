@@ -88,4 +88,8 @@
 	0% { transform: rotate(0deg); }
 	100% { transform: rotate(360deg); }
   }
-  
+  @media (min-width:494px) and (max-width: 763px) {
+	.home{
+		padding-top: 10rem;
+	}
+  }
