@@ -3,14 +3,9 @@ import React from "react";
 import { useState, useEffect } from "react";
 
 const Timer = () => {
-	const countdownDate = new Date("10/24/2024");
+	const countdownDate = new Date('2024-10-24T09:00:00');
 	//end date
-	const [state, setState] = useState({
-		days: 0,
-		hours: 0,
-		minutes: 0,
-		seconds: 0,
-	});
+	const [state, setState] = useState(new Date());
 	//state variable to store days, hours, minutes and seconds
 
 	useEffect(() => {
