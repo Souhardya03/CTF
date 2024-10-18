@@ -11,7 +11,7 @@ const Footer = () => {
 		<>
 			<div className=" ">
 				<div
-					className="p-4 flex w-full bg-[#212121] fixed bottom-0 justify-between items-center 
+					className="p-4 flex w-full z-[9] bg-[#212121] fixed bottom-0 justify-between items-center 
 				 text-white WitchMagic">
 					<p className="lg:text-xl text-sm">
 						Team <span className="text-orange-400">Z3r0l0g0n</span>

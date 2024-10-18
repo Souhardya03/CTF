@@ -6,21 +6,40 @@ import { pageVariants, pageTransition } from "../Framer/Framer";
 import Footer from "../Footer/Footer";
 import Timer from "../Timer/Timer";
 import home_back from "../../assets/images/home-background.jpg";
+import Prizes from "./Prizes";
 
 const Home = () => {
 	const [loading, setLoading] = useState(true);
+	const [scrolled, setScrolled] = useState(false);
 
 	useEffect(() => {
 		const loadImage = async () => {
 			const image = new Image();
-			image.src = home_back; // Replace with your image path
+			image.src = home_back;
 			image.onload = () => {
 				setLoading(false);
 			};
 		};
 
 		loadImage();
+
+		const handleScroll = () => {
+			const scrollTop = window.scrollY || document.documentElement.scrollTop;
+			if (scrollTop > 20) {
+				console.log("scroll");
+				setScrolled(true);
+			} else {
+				setScrolled(false);
+			}
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
 	}, []);
+
+	
 
 	return (
 		<>
@@ -30,9 +49,9 @@ const Home = () => {
 				</div>
 			) : (
 				<>
-					<Navbar />
+					<Navbar scrolled={scrolled} />
 					<div
-						className="home-back home  h-[100vh] pt-[4rem] md:pt-40 lg:pt-0   overflow-x-hidden w-full"
+						className="home-back min-h-screen home pt-[4rem] md:pt-40 lg:pt-0   overflow-x-hidden w-full"
 						style={{
 							backgroundImage: "../../assets/images/home-background.jpg",backgroundAttachment:"fixed"
 						}}>
@@ -69,6 +88,7 @@ const Home = () => {
 								</div>
 							</div>
 						</motion.div>
+					{/* <Prizes/> */}
 					</div>
 				</>
 			)}

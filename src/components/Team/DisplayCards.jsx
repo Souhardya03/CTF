@@ -13,6 +13,7 @@ import Linkedin from "./images/linkedin.png";
 import github from "./images/github.png";
 import twitter from "./images/twitter.png";
 import Pankajda from "./images/Pankajda.jpg"
+import Abhigyanda from "./images/AbhigyanDa.jpg"
 const people = [
 	{
 		image: Purbayan,
@@ -80,6 +81,29 @@ const people = [
 			{
 				name: "Github",
 				url: "https://github.com/Pankaj0038",
+				icon: github,
+			},
+		],
+	},
+	{
+		image: Abhigyanda,
+		name: "Abhigyan Singh",
+		role: "Challenge Creator",
+		department: "CSE'25, JGEC",
+		socialLinks: [
+			{
+				name: "Twitter",
+				url: "",
+				icon: twitter,
+			},
+			{
+				name: "LinkedIn",
+				url: "https://www.linkedin.com/in/abhigyan103/",
+				icon: Linkedin,
+			},
+			{
+				name: "Github",
+				url: "https://github.com/Abhigyan103",
 				icon: github,
 			},
 		],
