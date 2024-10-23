@@ -6,7 +6,8 @@ import { pageVariants, pageTransition } from "../Framer/Framer";
 import Footer from "../Footer/Footer";
 import Timer from "../Timer/Timer";
 import home_back from "../../assets/images/home-background.jpg";
-import Prizes from "./Prizes";
+import Sponsors from "./Sponsors";
+
 
 const Home = () => {
 	const [loading, setLoading] = useState(true);
@@ -39,8 +40,6 @@ const Home = () => {
 		};
 	}, []);
 
-	
-
 	return (
 		<>
 			{loading ? (
@@ -53,7 +52,8 @@ const Home = () => {
 					<div
 						className="home-back min-h-screen home pt-[4rem] md:pt-40 lg:pt-0   overflow-x-hidden w-full"
 						style={{
-							backgroundImage: "../../assets/images/home-background.jpg",backgroundAttachment:"fixed"
+							backgroundImage: "../../assets/images/home-background.jpg",
+							backgroundAttachment: "fixed",
 						}}>
 						<motion.div
 							exit="out"
@@ -87,8 +87,8 @@ const Home = () => {
 									<Timer />
 								</div>
 							</div>
+							<Sponsors />
 						</motion.div>
-					{/* <Prizes/> */}
 					</div>
 				</>
 			)}

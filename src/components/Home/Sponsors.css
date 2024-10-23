@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Nosifer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz+One&family=Nosifer&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stardos+Stencil:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Stick&display=swap");
+
+.nosifer-regular {
+	font-family: "Nosifer", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.fugaz-one-regular {
+	font-family: "Fugaz One", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.stardos-stencil-regular {
+	font-family: "Stardos Stencil", system-ui;
+	font-weight: 700;
+	font-style: normal;
+}
+.stick-regular {
+	font-family: "Stick", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.card_back {
+	-webkit-box-shadow: -2px -1px 21px 1px rgba(181,177,181,0.9);
+-moz-box-shadow: -2px -1px 21px 1px rgba(181,177,181,0.9);
+box-shadow: -2px -1px 21px 1px rgba(181,177,181,0.9);
+}
