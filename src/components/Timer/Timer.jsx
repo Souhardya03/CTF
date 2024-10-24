@@ -61,22 +61,22 @@ const Timer = () => {
 			) : (
 				<div className="flex items-center gap-1 lg:gap-3">
 					<div className="flex p-4 rounded-md flex-col justify-center items-center bg-[#1a1919b5]">
-						<div>{state.days || "00"}</div>
+						<div>{"00"}</div>
 						<div className="text-yellow-400 text-xs">Days</div>
 					</div>
 					<div>:</div>
 					<div className="flex p-4 rounded-md flex-col justify-center items-center bg-[#1a1919b5]">
-						<div>{state.hours || "00"}</div>
+						<div>{"00"}</div>
 						<div className="text-yellow-400 text-xs">Hours</div>
 					</div>
 					<div>:</div>
 					<div className="flex p-4 rounded-md flex-col justify-center items-center bg-[#1a1919b5]">
-						<div>{state.minutes || "00"}</div>
+						<div>{"00"}</div>
 						<div className="text-yellow-400 text-xs">Minutes</div>
 					</div>
 					<div>:</div>
 					<div className="flex p-4 rounded-md flex-col justify-center items-center bg-[#1a1919b5]">
-						<div>{state.seconds || "00"}</div>
+						<div>{"00"}</div>
 						<div className="text-yellow-400 text-xs">Seconds</div>
 					</div>
 				</div>
